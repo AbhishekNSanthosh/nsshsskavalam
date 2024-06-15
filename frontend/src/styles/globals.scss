@@ -1,4 +1,4 @@
-@import "scss/variables";
+@import "variables";
 
 
 @tailwind base;
@@ -8,7 +8,8 @@
 body {
     padding: 0;
     margin: 0;
-    // font-family: $font-family;
+    background-color:$white ;
+    font-family: $font-family;
     color: $font-color;
     overflow-x: hidden;
     font-synthesis: none;
