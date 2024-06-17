@@ -14,12 +14,17 @@ export default function Navbar() {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.left}>
+          {!logos?.nssLogoWebP ? 
+            <div className={styles.logoFake}></div>
+          :
           <Image
             src={logos.nssLogoWebP}
             height={1000}
             width={1000}
+            alt="NSS LOGO"
             className={styles.logoImage}
           />
+          }
           <div className={styles.titleBox}>
             <span className={styles.title}>NSS Higher Secondary School </span>
             <span className={styles.subTitle}>Kavalam, Alappuzha </span>

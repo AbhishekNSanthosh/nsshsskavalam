@@ -1,0 +1,37 @@
+@import 'variables';
+
+.container{
+    display: flex;
+    width: 100vw;
+    background: $primary;
+    padding: 1.3rem 5vw;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2vw;
+
+        .navItemBox{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2vw;
+        }
+
+        .navLink{
+            color: $white;
+            text-transform: capitalize;
+        }
+
+        .hr{
+            height: 3vh;
+            width:1px;
+            background-color: rgba(255, 255, 255, 0.501);
+        }
+    }
+}

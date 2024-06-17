@@ -5,7 +5,7 @@
   width: 100vw;
   height: 15vh;
   // background: red;
-  border: 1px solid $primary;
+  border-bottom: 1px solid $primary;
   align-items: center;
   justify-content: center;
   padding: 2rem 5vw;
@@ -25,6 +25,12 @@
   align-items: center;
   justify-content: flex-start;
   gap: 1vw;
+
+  .logoFake{
+    background: red;
+    padding: 1.7rem;
+    border-radius: 50%;
+  }
 
   .logoImage {
     width: 3.5rem;
@@ -64,14 +70,14 @@
     .infoTitle{
         color: $primary;
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .numberTitle{
         color: $primary;
         font-weight: 600;
-        font-family: 'Roboto';
-        font-size: 1.2rem;
+        // font-family: 'Roboto';
+        font-size: 1.1rem;
     }
 
     .infoSubTitle{
@@ -79,12 +85,12 @@
     }
 
     .numberSubTitle{
-        font-family: 'Roboto';
+        // font-family: 'Roboto';
         font-size: 0.9rem;
     }
 
     .icon {
-      height: 2.3rem;
+      height: 2.2rem;
       color: $primary;
     }
 
