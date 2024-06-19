@@ -43,8 +43,8 @@ export const navItems = [
         hr:true
     },
     {
-        title:"activity",
-        link:"/activity",
+        title:"news & events",
+        link:"/newsandevents",
         hr:true
     },
     {

@@ -14,18 +14,27 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        gap: 2vw;
+        // gap: 0.2vw;
 
         .navItemBox{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 2vw;
+            padding: 0 1.8vw;
+        }
+
+        .navItemBoxHr{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-right: 1px solid rgb(219, 219, 219);
+            padding: 0 1.8vw;
         }
 
         .navLink{
             color: $white;
             text-transform: capitalize;
+            font-size: 1vw;
         }
 
         .hr{
