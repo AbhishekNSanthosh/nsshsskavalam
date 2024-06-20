@@ -3,6 +3,7 @@ import "@styles/globals.scss";
 import Navbar from "@widgets/Common/Navbar";
 import Menubar from "@widgets/Common/Menubar";
 import Footer from "@widgets/Common/Footer";
+import Bottombar from "@widgets/Common/Bottombar";
 
 const inter = Raleway({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <Menubar/>
         {children}
         <Footer/>
+        <Bottombar/>
       </body>
     </html>
   );
