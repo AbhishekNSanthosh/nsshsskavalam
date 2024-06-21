@@ -30,6 +30,9 @@ module.exports = {
         'primary-900': '#900c22',
         'primary-950': '#50000e'
       },
+      boxShadow: {
+        'custom': '0px 8px 24px rgba(149, 157, 165, 0.2)',
+      }
     },
   },
   plugins: [],

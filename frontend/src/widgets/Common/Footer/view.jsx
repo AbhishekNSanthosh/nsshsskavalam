@@ -16,7 +16,7 @@ import {
 
 export default function Footer() {
   return (
-    <>
+    <div className="mt-20">
       <hr />
       <div className="w-full px-5vw py-16">
         <div className="w-full flex gap-4">
@@ -122,6 +122,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
