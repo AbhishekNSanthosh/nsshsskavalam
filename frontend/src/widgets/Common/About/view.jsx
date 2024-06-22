@@ -1,14 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import TitleBar from "../TitleBar";
 
 export default function About() {
   return (
     <div className="w-full px-5vw py-20">
       <div className="w-full flex flex-col gap-12">
-        <div className="flex items-center gap-2">
-          <div className="w-1.5 bg-primary h-9"></div>
-          <span className="text-5xl font-semibold text-primary">ABOUT US</span>
-        </div>
+        <TitleBar title={"About Us"}/>
         <div className="flex flex-row items-start justify-between gap-10">
           <div className="flex-1 flex flex-col gap-2">
             <div className="flex">
