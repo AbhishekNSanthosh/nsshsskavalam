@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const NssLogo = () => {
   return (
 	<div>
-		<Image src={"/images/logo.webp"} height={80} width={100} className='h-14 w-14'/>
+		<Image src={"/images/nssOrangeLogo.webp"} height={1000} width={1000} className='h-full w-16'/>
 	</div>
   )
 }

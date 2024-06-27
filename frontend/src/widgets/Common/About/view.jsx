@@ -4,7 +4,7 @@ import TitleBar from "../TitleBar";
 
 export default function About() {
   return (
-    <div className="w-full px-5vw py-20">
+    <div className="w-full px-5vw py-8">
       <div className="w-full flex flex-col gap-12">
         <TitleBar title={"About Us"}/>
         <div className="flex flex-row items-start justify-between gap-10">

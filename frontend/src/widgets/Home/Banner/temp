@@ -24,13 +24,13 @@ const Banner = () => {
     timeoutRef.current = setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imageCount);
       setIsTransitioning(false);
-    }, 3500); // Duration of the transition should match CSS duration
+    }, 2000); // Duration of the transition should match CSS duration
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
       startTransition();
-    }, 3500); // Interval matches the desired auto-slide time
+    }, 3000); // Interval matches the desired auto-slide time
 
     return () => {
       clearInterval(interval);
@@ -46,7 +46,7 @@ const Banner = () => {
   return (
     <div className="relative w-screen h-[80vh] overflow-hidden">
       <div
-        className={`absolute inset-0 flex transition-transform duration-2500 ease-in-out ${
+        className={`absolute inset-0 flex transition-transform duration-2000 ease-in-out ${
           isTransitioning ? "" : "transition-none"
         }`}
         style={{
@@ -56,16 +56,18 @@ const Banner = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="w-screen h-[80vh] flex-shrink-0 bg-cover bg-center flex items-center justify-center relative"
+            className="w-screen h-[80vh] flex-shrink-0 bg-cover bg-center relative"
             style={{
               backgroundImage: `linear-gradient(to bottom, #0000004a, #0000004a), url(${image})`,
             }}
           >
-            <div className="flex justify-center w-[80vw] items-center flex-col rounded-lg">
-              <span className="bannerTitle text-white text-5xl font-semibold m-4">
-                NSS Higher Secondary School, Kavalam
-              </span>
-            </div>
+            {index === currentIndex && (
+              <div className="absolute inset-x-0 top-[50%] transform -translate-y-1/2 text-center">
+                <span className="bannerTitle text-white text-6xl font-bold m-4">
+                  NSS HSS KAVALAM
+                </span>
+              </div>
+            )}
           </div>
         ))}
       </div>
