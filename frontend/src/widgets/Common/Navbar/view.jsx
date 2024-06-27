@@ -8,6 +8,7 @@ import {
   faMapLocation,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
+import { NssLogo } from "../../../common/Icons/NssLogo/NssLogo";
 
 export default function Navbar() {
   return (
@@ -17,13 +18,14 @@ export default function Navbar() {
           {!logos?.nssLogoWebP ? 
             <div className={styles.logoFake}></div>
           :
-          <Image
-            src={logos.nssLogoWebP}
-            height={1000}
-            width={1000}
-            alt="NSS LOGO"
-            className={styles.logoImage}
-          />
+          // <Image
+          //   src="/images/logo1.jpg"
+          //   height={1000}
+          //   width={1000}
+          //   alt="NSS LOGO"
+          //   className={styles.logoImage}
+          // />
+          <NssLogo/>
           }
           <div className={styles.titleBox}>
             <span className={styles.title}>NSS Higher Secondary School </span>

@@ -15,7 +15,7 @@ export default function GeneralRules() {
         </div>
         <div className="w-full flex flex-col gap-1">
           {DisciplinaryRules?.map((rule,index)=>(
-            <div className="w-full">
+            <div className="w-full" key={`${rule}_${index}`}>
               <p className="text-lg">{index+1}.{" "}{rule}</p>
             </div>
           ))}
