@@ -1,6 +1,6 @@
 export const logos = {
   nssLogoSvg: "/images/logo.svg",
-  nssLogoWebP: "/images/logo1.webp",
+  nssLogoWebP: "/images/nssOrangeLogo.webp",
 };
 
 export const navItems = [

@@ -24,13 +24,13 @@ const Banner = () => {
     timeoutRef.current = setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imageCount);
       setIsTransitioning(false);
-    }, 3500); // Duration of the transition should match CSS duration
+    }, 2000); // Duration of the transition should match CSS duration
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
       startTransition();
-    }, 3500); // Interval matches the desired auto-slide time
+    }, 3000); // Interval matches the desired auto-slide time
 
     return () => {
       clearInterval(interval);

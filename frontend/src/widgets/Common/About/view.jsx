@@ -12,7 +12,7 @@ export default function About() {
             <div className="flex">
               <Image
                 className="object-cover w-full h-60 rounded-lg pointer-events-none"
-                src={"/images/nsslogo1.png"}
+                src={"/images/banner.webp"}
                 height={2000}
                 width={2000}
                 alt=""
@@ -22,7 +22,7 @@ export default function About() {
               <div className="">
                 <Image
                   className="object-cover h-52 rounded-lg pointer-events-none"
-                  src={"/images/nsslogo1.png"}
+                  src={"/images/banner.webp"}
                   height={500}
                   width={500}
                   alt=""
@@ -31,7 +31,7 @@ export default function About() {
               <div className="">
                 <Image
                   className="object-cover h-52 rounded-lg pointer-events-none"
-                  src={"/images/nsslogo1.png"}
+                  src={"/images/banner.webp"}
                   height={500}
                   width={500}
                   alt=""
