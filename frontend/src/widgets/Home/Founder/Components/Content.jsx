@@ -22,6 +22,7 @@ export default function Content() {
           src={"/images/mannam.webp"}
           height={1000}
           width={1000}
+          alt="nsshsskavalam"
           className="h-full w-72 rounded-full"
           data-aos="fade-up"
         />

@@ -46,7 +46,7 @@ export default function Content() {
               src={"/images/person.png"}
               height={1000}
               width={1000}
-              alt=""
+              alt="nsshsskavalam"
             />
           </div>
         </div>

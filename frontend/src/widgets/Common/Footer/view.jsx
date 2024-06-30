@@ -27,7 +27,7 @@ export default function Footer() {
                 height={1000}
                 width={1000}
                 className="w-12"
-                alt=""
+                alt="nsshsskavalam"
               />
               <div className="flex flex-col justify-center">
                 <span className="font-bold text-font-primary">

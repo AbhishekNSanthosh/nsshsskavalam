@@ -9,7 +9,6 @@ import MailIcon from "@icons/SvgIcons/MailIcon";
 import Form from "@widgets/Contact/Components/Form";
 
 export default function Content() {
-  console.log(colors.fontPrimary);
   return (
     <div className="w-full px-5vw py-8">
       <div className="flex flex-col gap-8">
@@ -19,9 +18,9 @@ export default function Content() {
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15741.548345060619!2d76.4568463!3d9.4750201!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06281e4a04f9db%3A0xbef4993321cdfc74!2sNSS%20HSS%2C%20Kavalam!5e0!3m2!1sen!2sin!4v1719590255592!5m2!1sen!2sin"
             className="w-[100%] h-[70vh] rounded-lg"
             style={{ border: "0" }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 

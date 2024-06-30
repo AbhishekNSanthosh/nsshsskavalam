@@ -26,7 +26,7 @@
       "@lib/*": ["./src/common/lib/*"],
       "@font/*": ["./src/common/font/*"],
       "@core/*": ["./src/common/core/*"],
-      "@utils/*": ["./src/common/utils/*"],
+      "@utils/*": ["./src/common/Utils/*"],
       "@icons/*": ["./src/common/Icons/*"],
       "@themes/*": ["./src/common/themes/*"],
       "@styles/*": ["./src/styles/*"],

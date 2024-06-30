@@ -140,3 +140,22 @@ export const galleryImages = [
   { imgPath: "/images/gallery/nss_gallery_images (43).webp", isLarge: false },
   { imgPath: "/images/gallery/nss_gallery_images (44).webp", isLarge: false },
 ];
+
+export const facilities = [
+  {
+    title: "Class Rooms",
+    desc: "The classrooms are spacious, well-lighted, large and airy and provide the most conducive atmosphere for learning. The children and teachers take keen interest in maintaining cleanliness and decoration of their classrooms. \n\nMany class rooms are fitted with interactive boards and networking facilities. Lessons are delivered through use of advanced technology including LCD projectors, Laptops etc to make the lessons more informative, interactive and interesting",
+  },
+  {
+    title: "LIBRARY",
+    desc: "Self study and reading are important skills towards developing the habit of life-long learning which is an indispensable tool for future careers. The school provides an excellent library facility with a collection of over fifty thousand books on a wide spectrum of topics ranging from fiction and non-fiction to encyclopedias. The spacious and airy reading room with books and periodicals neatly arranged and graded, favors the reading needs of the children. The students from Classes III to XII have been allotted one period a week for library. In addition to this, students can avail the library facilities during their free time in school. This section of the school is spacious, well ventilated and is well equipped with books. It also includes good collection of books and reference books, CD’s, Journals, Magazines etc.. The library is subscribing to several periodicals and has fairly good collection of paper back volumes.",
+  },
+  {
+    title: "LABORATORIES",
+    desc: "The school has well equipped laboratories for Physics, Chemistry and Biology which cater to the experimental activities of the students from class IX to XII. The Labs are spacious enough to accommodate up to 30 students at a time.",
+  },
+  {
+    title: "INTEGRATED COMPUTER TECHNOLOGY IN EDUCATION",
+    desc: "The school has a fully fledged COMPUTER LAB with more than 20 computers."
+  },
+];
