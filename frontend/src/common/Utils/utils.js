@@ -20,8 +20,8 @@ export const navItems = [
   //     hr:true
   // },
   {
-    title: "Faculty",
-    link: "/faculty",
+    title: "staff",
+    link: "/staff",
     hr: true,
   },
   {
@@ -156,6 +156,122 @@ export const facilities = [
   },
   {
     title: "INTEGRATED COMPUTER TECHNOLOGY IN EDUCATION",
-    desc: "The school has a fully fledged COMPUTER LAB with more than 20 computers."
+    desc: "The school has a fully fledged COMPUTER LAB with more than 20 computers.",
+  },
+];
+
+export const teachingStaffDetails = [
+  {
+    name: "Teacher 1",
+    designation: "Principal",
+    mainSubject: "",
+  },
+  {
+    name: "Teacher 2",
+    designation: "Vice Principal",
+    mainSubject: "Mathematics",
+  },
+  {
+    name: "Teacher 3",
+    designation: "Senior Teacher",
+    mainSubject: "Physics",
+  },
+  {
+    name: "Teacher 4",
+    designation: "Teacher",
+    mainSubject: "Chemistry",
+  },
+  {
+    name: "Teacher 5",
+    designation: "Teacher",
+    mainSubject: "Biology",
+  },
+  {
+    name: "Teacher 6",
+    designation: "Teacher",
+    mainSubject: "English",
+  },
+  {
+    name: "Teacher 7",
+    designation: "Teacher",
+    mainSubject: "History",
+  },
+  {
+    name: "Teacher 8",
+    designation: "Teacher",
+    mainSubject: "Geography",
+  },
+  {
+    name: "Teacher 9",
+    designation: "Teacher",
+    mainSubject: "Computer Science",
+  },
+  {
+    name: "Teacher 10",
+    designation: "Teacher",
+    mainSubject: "Physical Education",
+  },
+];
+
+export const committee = [
+  {
+    name: "member 1",
+    designation: "secretary",
+    occupation: "principal",
+    contact: "123456789",
+  },
+  {
+    name: "member 2",
+    designation: "treasurer",
+    occupation: "teacher",
+    contact: "234567891",
+  },
+  {
+    name: "member 3",
+    designation: "vice president",
+    occupation: "counselor",
+    contact: "345678912",
+  },
+  {
+    name: "member 4",
+    designation: "board member",
+    occupation: "administrator",
+    contact: "456789123",
+  },
+  {
+    name: "member 5",
+    designation: "president",
+    occupation: "superintendent",
+    contact: "567891234",
+  },
+  {
+    name: "member 6",
+    designation: "board member",
+    occupation: "vice principal",
+    contact: "678912345",
+  },
+  {
+    name: "member 7",
+    designation: "secretary",
+    occupation: "principal",
+    contact: "789123456",
+  },
+  {
+    name: "member 8",
+    designation: "treasurer",
+    occupation: "teacher",
+    contact: "891234567",
+  },
+  {
+    name: "member 9",
+    designation: "vice president",
+    occupation: "counselor",
+    contact: "912345678",
+  },
+  {
+    name: "member 10",
+    designation: "board member",
+    occupation: "administrator",
+    contact: "123456780",
   },
 ];
