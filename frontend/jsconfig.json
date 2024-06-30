@@ -27,7 +27,7 @@
       "@font/*": ["./src/common/font/*"],
       "@core/*": ["./src/common/core/*"],
       "@utils/*": ["./src/common/utils/*"],
-      "@icons/*": ["./src/common/icons/*"],
+      "@icons/*": ["./src/common/Icons/*"],
       "@themes/*": ["./src/common/themes/*"],
       "@styles/*": ["./src/styles/*"],
       "@images/*": ["./src/images/*"],

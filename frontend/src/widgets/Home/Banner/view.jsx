@@ -75,7 +75,7 @@ const Banner = () => {
             key={index}
             onClick={() => handleDotClick(index)}
             className={`h-3 w-3 rounded-full ${
-              currentIndex === index ? "bg-white" : "bg-primary"
+              currentIndex === index ? "bg-white" : "bg-primary-300"
             }`}
           />
         ))}

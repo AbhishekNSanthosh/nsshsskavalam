@@ -42,7 +42,7 @@ export default function About() {
 
           <div className="flex-1 flex flex-col items-start gap-4">
           <span className="flex text-2xl font-bold text-primary">NSS HIGHER SECONDARY SCHOOL</span>
-          <span className="flex text-xl font-bold text-primary-500">Since 1958, Alappuzha, Kavalam P.O</span>
+          <span className="flex text-xl font-bold text-font-secondary">Since 1958, Alappuzha, Kavalam P.O</span>
             <p className=" text-justify text-lg">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, commodi doloremque tempora eaque dolor, at quod ducimus non id perferendis vitae nisi sit voluptates. Quia id odit temporibus illum asperiores.
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, commodi doloremque tempora eaque dolor, at quod ducimus non id perferendis vitae nisi sit voluptates. Quia id odit temporibus illum asperiores. <br /><br />

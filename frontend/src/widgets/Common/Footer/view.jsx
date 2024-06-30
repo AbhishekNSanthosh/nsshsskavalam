@@ -26,7 +26,7 @@ export default function Footer() {
                 src={logos.nssLogoWebP}
                 height={1000}
                 width={1000}
-                className="w-16"
+                className="w-12"
                 alt=""
               />
               <div className="flex flex-col justify-center">
@@ -38,7 +38,7 @@ export default function Footer() {
                 </span>
               </div>
             </div>
-            <div className="p-4 pr-8 text-justify">
+            <div className="pt-4 pr-8 text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur at fugiat laboriosam aspernatur praesentium possimus
               repudiandae.
