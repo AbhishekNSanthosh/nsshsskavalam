@@ -14,11 +14,11 @@ export const navItems = [
     link: "/about",
     hr: true,
   },
-  // {
-  //     title:"admission",
-  //     link:"/admission",
-  //     hr:true
-  // },
+  {
+      title:"academics",
+      link:"/academics",
+      hr:true
+  },
   {
     title: "staff",
     link: "/staff",
@@ -39,11 +39,11 @@ export const navItems = [
     link: "/facilities",
     hr: true,
   },
-  {
-    title: "news & events",
-    link: "/newsandevents",
-    hr: true,
-  },
+  // {
+  //   title: "news & events",
+  //   link: "/newsandevents",
+  //   hr: true,
+  // },
   // {
   //   title: "achievements",
   //   link: "/achievements",
@@ -275,3 +275,19 @@ export const committee = [
     contact: "123456780",
   },
 ];
+
+
+export const academics = [
+  {
+    title:"Science stream",
+    desc:"English, Mathematics, Physics & Chemistry are the compulsory subjects.\n\n Optional subjects include Biology and Computer Science. "
+  },
+  {
+    title:"Commerce stream",
+    desc:"English, Mathematics/Computer, Business Studies, Accountancy, Commerce.\n\n Physical Education, General Studies are the non-scholastic subjects included in the syllabus."
+  },
+  {
+    title:"Humanities stream",
+    desc:"English, Mathematics/Computer, Business Studies, Accountancy, Commerce.\n\n Physical Education, General Studies are the non-scholastic subjects included in the syllabus."
+  },
+]

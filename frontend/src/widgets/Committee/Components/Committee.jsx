@@ -33,7 +33,7 @@ export default function (props) {
               <td class="border-t-0 px-6 capitalize align-center border-l-0 border-r-0 text-base whitespace-nowrap p-4">
                 {detail?.occupation}
               </td>
-              <td class="border-t-0 px-6 capitalize align-center border-l-0 border-r-0 text-base whitespace-nowrap p-4">
+              <td class="border-t-0 px-6 capitalizek align-center border-l-0 border-r-0 text-base whitespace-nowrap p-4">
                 {detail?.contact}
               </td>
             </tr>
