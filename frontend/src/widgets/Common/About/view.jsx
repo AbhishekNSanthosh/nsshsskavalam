@@ -5,7 +5,7 @@ import TitleBar from "../TitleBar";
 export default function About() {
   return (
     <div className="w-full px-5vw py-8">
-      <div className="w-full flex flex-col gap-12">
+      <div className="w-full flex flex-col gap-6 md:gap-12 lg:gap-12">
         <TitleBar title={"About Us"} />
         <div className="flex flex-col items-start justify-between gap-10 md:flex-row lg:flex-row">
           <div className="flex-1 flex flex-col gap-2">
@@ -41,10 +41,10 @@ export default function About() {
           </div>
 
           <div className="flex-1 flex flex-col items-start gap-4">
-            <span className="flex text-2xl font-bold text-primary">
+            <span className="flex text-xl font-bold text-primary lg:text-2xl md:text-2xl">
               NSS HIGHER SECONDARY SCHOOL
             </span>
-            <span className="flex text-xl font-bold text-font-secondary">
+            <span className="flex text-base font-bold text-font-secondary md:text-xl lg:text-xl">
               Since 1958, Alappuzha, Kavalam P.O
             </span>
             <p className=" text-justify text-lg">

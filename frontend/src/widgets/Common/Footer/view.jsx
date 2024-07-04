@@ -19,25 +19,25 @@ export default function Footer() {
       <hr />
       <div className="w-full px-5vw py-4 md:py-16 lg:py-16">
         <div className="w-full flex flex-col gap-8 md:gap-4 lg:gap-4 sm:flex-row md:flex-row lg:flex-row">
-          <div className="flex-1 pr-3">
+          <div className="flex-1 pr-0 md:pr-3 lg:pr-3">
             <div className="flex justify-start gap-4">
               <Image
                 src={logos.nssLogoWebP}
                 height={1000}
                 width={1000}
-                className="w-12"
+                className="w-9 md:w-12 lg:w-12"
                 alt="nsshsskavalam"
               />
               <div className="flex flex-col justify-center">
-                <span className="font-bold text-font-primary">
+                <span className="font-bold text-font-primary text-sm lg:text-base md:text-base">
                   NSS HIGHER SECONDARY SCHOOL
                 </span>
-                <span className="font-normal text-font-secondary">
+                <span className="font-normal text-font-secondary text-xs lg:text-sm md:text-sm">
                   Kavalam Alappuzha District, Kerala
                 </span>
               </div>
             </div>
-            <div className="pt-4 pr-8 text-justify">
+            <div className="pt-4 pr-0 text-justify md:pr-8 lg:pr-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur at fugiat laboriosam aspernatur praesentium possimus
               repudiandae.

@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <head></head>
       <body className={inter.className}>
         <Navbar />
-        <div className="mt-[10vh] md:mt-0 lg:mt-[15vh]">
+        <div className="mt-[10vh] md:mt-[14vh] lg:mt-[14vh]">
           <div className="hidden lg:flex md:flex">
             <Menubar />
           </div>
