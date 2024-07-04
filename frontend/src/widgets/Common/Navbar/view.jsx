@@ -18,7 +18,7 @@ export default function Navbar() {
           <div className="flex sm:flex-1 lg:flex-1 p-0 items-center gap-4">
             <NssLogo />
             <div className="flex flex-col">
-              <span className="text-lg font-semibold md:text-xl lg:text-xl">
+              <span className="text-base font-semibold md:text-xl lg:text-xl">
                 NSS Higher Secondary School{" "}
               </span>
               <span className="text-xs md:text-base lg:text-base">

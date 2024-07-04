@@ -44,7 +44,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative w-screen h-[80vh] overflow-hidden mt-0">
+    <div className="relative w-screen h-[92vh] md:h-[80vh] lg:h-[80vh] overflow-hidden mt-0">
       <div
         className={`absolute inset-0 flex transition-transform duration-2500 ease-in-out ${
           isTransitioning ? "" : "transition-none"
@@ -56,13 +56,13 @@ const Banner = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="w-screen h-[80vh] flex-shrink-0 bg-cover bg-center flex items-center justify-center relative"
+            className="w-screen h-[92vh] md:h-[80vh] lg:h-[80vh] flex-shrink-0 bg-cover bg-center flex items-center justify-center relative"
             style={{
               backgroundImage: `linear-gradient(to bottom, #0000004a, #0000004a), url(${image})`,
             }}
           >
-            <div className="flex justify-center w-[80vw] items-center flex-col rounded-lg">
-              <span className="bannerTitle text-white text-5xl font-semibold m-4">
+            <div className="flex justify-center w-[95vw] md:w-[80vw] lg:w-[80vw] items-center flex-col rounded-lg">
+              <span className="bannerTitle text-white text-base md:text-5xl lg:text-5xl font-semibold m-4">
                 NSS Higher Secondary School, Kavalam
               </span>
             </div>

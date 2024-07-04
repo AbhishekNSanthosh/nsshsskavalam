@@ -23,7 +23,7 @@ export default function Content() {
           height={1000}
           width={1000}
           alt="nsshsskavalam"
-          className="h-full w-72 rounded-full"
+          className="h-full w-44 rounded-full lg:w-72 md:w-72"
           data-aos="fade-up"
         />
         <span
@@ -33,12 +33,12 @@ export default function Content() {
           Our Founder
         </span>
         <span
-          className="text-4xl font-bold text-font-secondary"
+          className="text-xl lg:text-4xl md:text-4xl font-bold text-font-secondary"
           data-aos="fade-up"
         >
           Sri.Mannathu Padmanabhan
         </span>
-        <p className="text-lg font-medium text-center" data-aos="fade-up">
+        <p className="text-lg font-medium text-justify lg:text-center md:text-center" data-aos="fade-up">
           Our Founder, Sri Mannathu Padmanabhan instilled a sense of direction
           in the decadent Nair Community by organizing the people under the
           banner of Nair Service Society, a service organization equipped and
