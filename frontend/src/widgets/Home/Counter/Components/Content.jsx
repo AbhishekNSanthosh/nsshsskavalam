@@ -5,7 +5,7 @@ import React from "react";
 export default function Content() {
   return (
     <div className="px-5vw py-16">
-      <div className="flex flex-row gap-4 flex-nowrap">
+      <div className="flex flex-col gap-4 md:flex-row lg:flex-row">
         <div className="flex-1 flex flex-col rounded-[8px] bg-white p-8 shadow-custom gap-4">
           <div className="flex w-full items-center justify-center">
             <FontAwesomeIcon icon={faUsers} className="w-10"/>

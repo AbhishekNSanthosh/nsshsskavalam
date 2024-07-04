@@ -15,10 +15,10 @@ import {
 
 export default function Footer() {
   return (
-    <div className="mt-10">
+    <div className="mt-10 md:mt-10 lg:mt-10">
       <hr />
-      <div className="w-full px-5vw py-16">
-        <div className="w-full flex gap-4">
+      <div className="w-full px-5vw py-4 md:py-16 lg:py-16">
+        <div className="w-full flex flex-col gap-8 md:gap-4 lg:gap-4 sm:flex-row md:flex-row lg:flex-row">
           <div className="flex-1 pr-3">
             <div className="flex justify-start gap-4">
               <Image

@@ -44,7 +44,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative w-screen h-[80vh] overflow-hidden">
+    <div className="relative w-screen h-[80vh] overflow-hidden mt-0">
       <div
         className={`absolute inset-0 flex transition-transform duration-2500 ease-in-out ${
           isTransitioning ? "" : "transition-none"

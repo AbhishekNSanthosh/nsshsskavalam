@@ -7,7 +7,7 @@ export default function About() {
     <div className="w-full px-5vw py-8">
       <div className="w-full flex flex-col gap-12">
         <TitleBar title={"About Us"} />
-        <div className="flex flex-row items-start justify-between gap-10">
+        <div className="flex flex-col items-start justify-between gap-10 md:flex-row lg:flex-row">
           <div className="flex-1 flex flex-col gap-2">
             <div className="flex">
               <Image
