@@ -35,7 +35,7 @@ export default function Content() {
             <FontAwesomeIcon icon={faLaptop} className="w-10"/>
           </div>
           <div className="w-full">
-         <span className="text-3xl font-bold flex items-center justify-center">5+</span>
+         <span className="text-3xl font-bold flex items-center justify-center">12</span>
           </div>
           <div className="w-full">
           <span className="text-2xl flex items-center justify-center">Digital Class Rooms</span>

@@ -1,71 +1,79 @@
-import React from "react";
-import styles from "@styles/navbar.module.scss";
-import Image from "next/image";
-import { logos } from "../../../common/Utils/utils";
+"use client";
+
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDays,
-  faMapLocation,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
 import { NssLogo } from "../../../common/Icons/NssLogo/NssLogo";
+import { HiMenuAlt2 } from "react-icons/hi";
 
 export default function Navbar() {
+  const [isDrawerOpen, setOsIsDrawerOpen] = useState(false);
   return (
-    <div className={styles.container}>
-      <div className={styles.wrapper}>
-        <div className={styles.left}>
-          {!logos?.nssLogoWebP ? 
-            <div className={styles.logoFake}></div>
-          :
-          // <Image
-          //   src="/images/logo1.jpg"
-          //   height={1000}
-          //   width={1000}
-          //   alt="NSS LOGO"
-          //   className={styles.logoImage}
-          // />
-          <NssLogo/>
-          }
-          <div className={styles.titleBox}>
-            <span className={styles.title}>NSS Higher Secondary School </span>
-            <span className={styles.subTitle}>Kavalam, Alappuzha </span>
+    <div className={`fixed bg-white_shade top-0 z-50 h-auto flex flex-col w-screen items-center justify-center`}>
+      <div className="flex flex-col w-full px-5vw py-2 md:py-2 lg:py-2">
+        <div className="flex w-full justify-between">
+          <div className="flex sm:flex-1 lg:flex-1 p-0 items-center gap-4">
+            <NssLogo />
+            <div className="flex flex-col">
+              <span className="text-lg font-semibold md:text-xl lg:text-xl">
+                NSS Higher Secondary School{" "}
+              </span>
+              <span className="text-xs md:text-base lg:text-base">
+                Kavalam, Alappuzha{" "}
+              </span>
+            </div>
+          </div>
+          <div className="md:flex lg:flex flex-1 hidden items-center justify-end gap-8">
+            <div className="flex gap-4 items-center justify-center">
+              <FontAwesomeIcon
+                icon={faCalendarDays}
+                className="h-8 text-primary"
+              />
+              <div className="flex flex-col">
+                <div className="flex">
+                  <span className="">9:00</span>
+                  <span className="">AM</span>
+                  &nbsp;
+                  <span className=""> - </span>
+                  &nbsp;
+                  <span className="">5:00</span>
+                  <span className="">PM</span>
+                </div>
+                <span className="">Monday to Saturday</span>
+              </div>
+            </div>
+            <div className="flex gap-4 items-center justify-center">
+              <FontAwesomeIcon
+                icon={faPhoneVolume}
+                className="h-8 text-primary"
+              />
+              <div className="flex flex-col">
+                <span className="">Call us</span>
+                <span className="">
+                  <a href="tel:04772746100" className="">
+                    0477 2746100
+                  </a>
+                  &nbsp;
+                  <a href="tel:+919747408039" className="">
+                    +91 9747408039
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="flex md:hidden lg:hidden items-center justify-center text-3xl cursor-pointer">
+            <HiMenuAlt2
+              onClick={() => {
+                setOsIsDrawerOpen(!isDrawerOpen);
+              }}
+            />
           </div>
         </div>
-        <div className={styles.right}>
-          <div className={styles.rightItem}>
-            <FontAwesomeIcon icon={faCalendarDays} className={styles.icon} />
-            <div className={styles.innerBox}>
-              <div className={styles.numberBox}>
-                <span className={styles.numberTitle}>9:00</span>
-                <span className={styles.infoTitle}>AM</span>
-                &nbsp;
-                <span className={styles.infoTitle}> - </span>
-                &nbsp;
-                <span className={styles.numberTitle}>5:00</span>
-                <span className={styles.infoTitle}>PM</span>
-              </div>
-              <span className={styles.infoSubTitle}>Monday to Saturday</span>
-            </div>
-          </div>
-          <div className={styles.rightItem}>
-            <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
-            <div className={styles.innerBox}>
-              <span className={styles.infoTitle}>Call us</span>
-              <span className={styles.numberSubTitle}>
-                0477 228 8646, &nbsp;0477 228 8548
-              </span>
-            </div>
-          </div>
-          <div className={styles.rightItem}>
-            <FontAwesomeIcon icon={faMapLocation} className={styles.icon} />
-            <div className={styles.innerBox}>
-              <span className={styles.infoTitle}>Kavalam</span>
-              <span className={styles.infoSubTitle}>
-                Alappuzha District, Kerala
-              </span>
-            </div>
-          </div>
+        <div className={`${isDrawerOpen ? 'flex' : 'hidden'} mt-[10vh] h-screen w-screen md:hidden lg:hidden bg-white_shade z-50 `}>
+          h
         </div>
       </div>
     </div>

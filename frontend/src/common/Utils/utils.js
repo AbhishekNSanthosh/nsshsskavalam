@@ -15,9 +15,9 @@ export const navItems = [
     hr: true,
   },
   {
-      title:"academics",
-      link:"/academics",
-      hr:true
+    title: "academics",
+    link: "/academics",
+    hr: true,
   },
   {
     title: "staff",
@@ -25,13 +25,13 @@ export const navItems = [
     hr: true,
   },
   {
-    title: "general rules",
-    link: "/general-rules",
+    title: "committee",
+    link: "/committee",
     hr: true,
   },
   {
-    title: "committee",
-    link: "/committee",
+    title: "general rules",
+    link: "/general-rules",
     hr: true,
   },
   {
@@ -117,7 +117,7 @@ export const galleryImages = [
   { imgPath: "/images/gallery/nss_gallery_images (20).webp", isLarge: true },
   { imgPath: "/images/gallery/nss_gallery_images (21).webp", isLarge: true },
   { imgPath: "/images/gallery/nss_gallery_images (22).webp", isLarge: false },
-  { imgPath: "/images/gallery/nss_gallery_images (23).webp", isLarge: false },
+  // { imgPath: "/images/gallery/nss_gallery_images (23).webp", isLarge: false },
   { imgPath: "/images/gallery/nss_gallery_images (24).webp", isLarge: false },
   { imgPath: "/images/gallery/nss_gallery_images (25).webp", isLarge: false },
   { imgPath: "/images/gallery/nss_gallery_images (26).webp", isLarge: false },
@@ -162,54 +162,84 @@ export const facilities = [
 
 export const teachingStaffDetails = [
   {
-    name: "Teacher 1",
-    designation: "Principal",
-    mainSubject: "",
+    name: "Smt. JYOTHILAKSHMI V",
+    designation: "PRINCIPAL, HSST HISTORY",
   },
   {
-    name: "Teacher 2",
-    designation: "Vice Principal",
-    mainSubject: "Mathematics",
+    name: "Smt. BIJI M NAIR",
+    designation: "HSST Sr. SEL GR MATHEMATICS",
   },
   {
-    name: "Teacher 3",
-    designation: "Senior Teacher",
-    mainSubject: "Physics",
+    name: "Smt. PRAMEELA KUMARI S",
+    designation: "HSST Sr. SEL GR MALAYALAM ( Souhrida Coordinator ) ",
   },
   {
-    name: "Teacher 4",
-    designation: "Teacher",
-    mainSubject: "Chemistry",
+    name: "Sri. SREEKUMAR C R",
+    designation: "HSST Sr. SEL. GR COMPUTER SCIENCE",
   },
   {
-    name: "Teacher 5",
-    designation: "Teacher",
-    mainSubject: "Biology",
+    name: "Smt. JYOTHILEKSHMI L",
+    designation: "HSST Sr. SEL. GR PHYSICS",
   },
   {
-    name: "Teacher 6",
-    designation: "Teacher",
-    mainSubject: "English",
+    name: "Smt. VIDHYA K NAIR",
+    designation: "HSST Sr. SEL. GR CHEMISTRY",
   },
   {
-    name: "Teacher 7",
-    designation: "Teacher",
-    mainSubject: "History",
+    name: "Smt. SANGEETHA R",
+    designation: "HSST HG ENGLISH",
   },
   {
-    name: "Teacher 8",
-    designation: "Teacher",
-    mainSubject: "Geography",
+    name: "Smt. ROOPA RAJU",
+    designation: "HSST COMMERCE",
   },
   {
-    name: "Teacher 9",
-    designation: "Teacher",
-    mainSubject: "Computer Science",
+    name: "Smt. SREEDEVI M",
+    designation: "HSST HG HINDI",
   },
   {
-    name: "Teacher 10",
-    designation: "Teacher",
-    mainSubject: "Physical Education",
+    name: "Smt. VEENA GOPINATH",
+    designation: "HSST ECONOMICS",
+  },
+  {
+    name: "Sri. SYAM K NAIR",
+    designation: "HSST SANSKRIT ( Programme Officer, National Service Scheme )",
+  },
+  {
+    name: "Smt. RANJITHA R PILLAI",
+    designation: "HSST ENGLISH",
+  },
+  {
+    name: "Sri. SURESH KUMAR K",
+    designation: "HSST Jr Sel Gr SANSKRIT",
+  },
+  {
+    name: "Smt. ANJALI L S",
+    designation: "HSST Jr. HG PHYSICS",
+  },
+  {
+    name: "Smt. RESMI P",
+    designation: "HSST Jr. COMMERCE ( Scouts Master )",
+  },
+  {
+    name: "Smt. Dr. VINITA NAIR",
+    designation: "HSST Jr. ECONOMICS ( Ranger - Guides )",
+  },
+  {
+    name: "Smt. Dr. GAYATHRY R",
+    designation: "HSST Jr. ZOOLOGY",
+  },
+  {
+    name: "Sri. Dr. RAGESH R NAIR",
+    designation: "HSST Jr. BOTANY ( Carreer Guide )",
+  },
+  {
+    name: "Sri. MURUKADAS M R",
+    designation: "LAB ASST HG",
+  },
+  {
+    name: "Sri. VYSHAKH B",
+    designation: "LAB ASST",
   },
 ];
 
@@ -276,18 +306,45 @@ export const committee = [
   },
 ];
 
-
 export const academics = [
   {
-    title:"Science stream",
-    desc:"English, Mathematics, Physics & Chemistry are the compulsory subjects.\n\n Optional subjects include Biology and Computer Science. "
+    title: "Science stream",
+    desc: "English, Mathematics, Physics & Chemistry are the compulsory subjects.\n\n Optional subjects include Biology and Computer Science. ",
   },
   {
-    title:"Commerce stream",
-    desc:"English, Mathematics/Computer, Business Studies, Accountancy, Commerce.\n\n Physical Education, General Studies are the non-scholastic subjects included in the syllabus."
+    title: "Humanities stream",
+    desc: "History, Economics, Second language, English, Sanskrit(Shastra, Sahithya), .\n\n Physical Education, General Studies are the non-scholastic subjects included in the syllabus.",
   },
   {
-    title:"Humanities stream",
-    desc:"English, Mathematics/Computer, Business Studies, Accountancy, Commerce.\n\n Physical Education, General Studies are the non-scholastic subjects included in the syllabus."
+    title: "Commerce stream",
+    desc: "English, Computer Application, Business Studies, Accountancy, Economics, Second language.\n\n Physical Education, General Studies are the non-scholastic subjects included in the syllabus.",
   },
-]
+];
+
+export const managementCommittee = [
+  {
+    name: "JYOTHILAKSHMI V",
+    designation: "Principal, HSST HISTORY",
+    mobNo: "9747408039",
+  },
+  {
+    name: "BIJI M NAIR",
+    designation: "Senior assistant",
+    mobNo:"9447177791"
+  },
+  {
+    name: "PRAMEELA KUMARI S",
+    designation: "Staff secretary",
+    mobNo:"9496114870"
+  },
+  {
+    name: "GOPAKUMAR K",
+    designation: "PTA President",
+    mobNo: "7909158236",
+  },
+  {
+    name: "SASIKUMAR NALLARAKAL",
+    designation: "School vigilant committee",
+    mobNo: "9048758632",
+  },
+];

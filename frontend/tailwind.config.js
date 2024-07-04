@@ -21,6 +21,7 @@ module.exports = {
         "font-primary": "#3d3d3d",
         "font-secondary": "#6d6d6d",
         white: "#fff",
+        white_shade:"#fcfcfc",
         'primary-50': '#fff6ed',
         'primary-100': '#ffebd4',
         'primary-200': '#ffd2a8',

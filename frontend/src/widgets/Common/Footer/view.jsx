@@ -1,5 +1,4 @@
 import React from "react";
-import "@styles/footer.scss";
 import Image from "next/image";
 import { logos, navItems } from "../../../common/Utils/utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -81,7 +80,7 @@ export default function Footer() {
                     icon={faEnvelope}
                     className="text-font-secondary h-4"
                   />
-                  <span className="ml-2">nsskavalam@gmail.com</span>
+                  <a href="mailto:nsshsskavalam04066@gmail.com" className="ml-2">nsshsskavalam04066@gmail.com</a>
                 </div>
               </div>
               <div className="flex">

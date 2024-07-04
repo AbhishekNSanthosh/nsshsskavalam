@@ -8,7 +8,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(252, 252, 252);
+    background-color: #fcfcfc;
     font-family: $font-family;
     color: $font-color;
     overflow-x: hidden;
@@ -19,7 +19,14 @@ body {
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
-    transition: all 600ms ease
+    transition: all 600ms ease;
+    -webkit-tap-highlight-color: orange;
+}
+
+* {
+  -webkit-tap-highlight-color: orange; /* Safari and Chrome */
+  -moz-tap-highlight-color: orange;    /* Firefox (not officially supported but for completeness) */
+  -ms-tap-highlight-color: orange;     /* Edge (legacy) */
 }
 
 * {

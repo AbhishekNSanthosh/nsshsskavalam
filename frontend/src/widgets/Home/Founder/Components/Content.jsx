@@ -38,7 +38,7 @@ export default function Content() {
         >
           Sri.Mannathu Padmanabhan
         </span>
-        <p className="text-lg text-center" data-aos="fade-up">
+        <p className="text-lg font-medium text-center" data-aos="fade-up">
           Our Founder, Sri Mannathu Padmanabhan instilled a sense of direction
           in the decadent Nair Community by organizing the people under the
           banner of Nair Service Society, a service organization equipped and

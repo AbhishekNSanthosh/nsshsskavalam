@@ -13,9 +13,6 @@ export default function (props) {
               Designation
             </th>
             <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-              Occupation
-            </th>
-            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
               Contact No.
             </th>
           </tr>
@@ -30,11 +27,8 @@ export default function (props) {
               <td class="border-t-0 px-6 capitalize align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4 ">
                 {detail?.designation}
               </td>
-              <td class="border-t-0 px-6 capitalize align-center border-l-0 border-r-0 text-base whitespace-nowrap p-4">
-                {detail?.occupation}
-              </td>
               <td class="border-t-0 px-6 capitalizek align-center border-l-0 border-r-0 text-base whitespace-nowrap p-4">
-                {detail?.contact}
+                +91{" "}{detail?.mobNo}
               </td>
             </tr>
           ))}

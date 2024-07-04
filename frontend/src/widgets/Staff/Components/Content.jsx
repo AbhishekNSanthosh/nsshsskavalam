@@ -1,4 +1,4 @@
-import { teachingStaffDetails } from "@utils/utils";
+import { labStaff, teachingStaffDetails } from "@utils/utils";
 import TitleBar from "@widgets/Common/TitleBar";
 import React from "react";
 
@@ -29,22 +29,19 @@ export default function Content() {
           </p>
         </div>
         <div className="flex flex-col gap-8 items-center justify-center  mt-4">
-          <div className="flex gap-8 w-full items-center justify-center">
+          <div className="flex gap-8 w-[50vw] items-center justify-center">
             <div className="w-full flex-1 flex flex-col gap-6 items-center justify-center">
-              <span className="text-2xl text-primary font-semibold">
-                Teaching Staff
-              </span>
+              {/* <span className="text-2xl text-primary font-semibold">
+                 Staff
+              </span> */}
               <table class="items-center bg-transparent w-full border-collapse ">
                 <thead>
                   <tr>
-                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                    <th class="px-6 bg-blueGray-50  text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                       Name
                     </th>
                     <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                      Post
-                    </th>
-                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                      Subject Handling
+                      Designation
                     </th>
                   </tr>
                 </thead>
@@ -52,53 +49,11 @@ export default function Content() {
                 <tbody>
                   {teachingStaffDetails?.map((detail, index) => (
                     <tr key={`${detail?.name}_${index}`}>
-                      <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4 text-left text-blueGray-700 ">
+                      <th class="border-t-0 capitalize px-6 align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4 text-left text-blueGray-700 ">
                         {detail?.name}
                       </th>
                       <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4 ">
                         {detail?.designation}
-                      </td>
-                      <td class="border-t-0 px-6 align-center border-l-0 border-r-0 text-base whitespace-nowrap p-4">
-                        {detail?.mainSubject}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            <div className="h-[70vh] w-[.5px] bg-secondary"></div>
-
-            <div className="w-full flex-1 flex flex-col  gap-6 items-center justify-center">
-              <span className="text-2xl text-primary font-semibold">
-                Non-Teaching Staff
-              </span>
-              <table class="items-center bg-transparent w-full border-collapse ">
-                <thead>
-                  <tr>
-                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                      Name
-                    </th>
-                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                      Post
-                    </th>
-                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                      Subject Handling
-                    </th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  {teachingStaffDetails?.map((detail, index) => (
-                    <tr key={`${detail?.name}_${index}`}>
-                      <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4 text-left text-blueGray-700 ">
-                        {detail?.name}
-                      </th>
-                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4 ">
-                        {detail?.designation}
-                      </td>
-                      <td class="border-t-0 px-6 align-center border-l-0 border-r-0 text-base whitespace-nowrap p-4">
-                        {detail?.mainSubject}
                       </td>
                     </tr>
                   ))}

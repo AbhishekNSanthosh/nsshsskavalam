@@ -15,14 +15,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-      </head>
+      <head></head>
       <body className={inter.className}>
         <Navbar />
-        <Menubar/>
-        {children}
-        <Footer/>
-        <Bottombar/>
+        <div className="mt-[10vh] md:mt-0 lg:mt-[15vh]">
+          <Menubar />
+          {children}
+          <Footer />
+          <Bottombar />
+        </div>
       </body>
     </html>
   );
