@@ -7,7 +7,7 @@ export default function Content() {
       <div className="w-full flex flex-col md:flex-row lg:flex-row">
         <div className="flex-1 flex flex-col gap-6">
           <div className="w-full">
-            <span className="text-4xl font-semibold text-primary">
+            <span className="text-2xl font-semibold text-primary md:text-4xl lg:text-4xl">
               Principal's Message
             </span>
           </div>

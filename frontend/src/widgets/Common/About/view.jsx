@@ -41,13 +41,13 @@ export default function About() {
           </div>
 
           <div className="flex-1 flex flex-col items-start gap-4">
-            <span className="flex text-xl font-bold text-primary lg:text-2xl md:text-2xl">
+            <span className="flex text-lg font-bold text-primary lg:text-2xl md:text-2xl">
               NSS HIGHER SECONDARY SCHOOL
             </span>
             <span className="flex text-base font-bold text-font-secondary md:text-xl lg:text-xl">
               Since 1958, Alappuzha, Kavalam P.O
             </span>
-            <p className=" text-justify text-lg">
+            <p className=" text-base">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
               commodi doloremque tempora eaque dolor, at quod ducimus non id
               perferendis vitae nisi sit voluptates. Quia id odit temporibus
