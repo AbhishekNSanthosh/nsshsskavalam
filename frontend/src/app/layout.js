@@ -11,7 +11,7 @@ const inter = Raleway({ subsets: ["latin"] });
 export const metadata = {
   title: "NSS HSS Kavalam",
   description: "Official Website of NSS HSS Kavalam, providing quality education and holistic development in Kerala.",
-  keywords: "NSS HSS Kavalam, NSS Higher Secondary School, Kavalam School, Kerala Education, NSS School, Higher Secondary Education, Education in Kerala"
+  keywords: "NSS HSS Kavalam,nss hss kavalam, NSS Higher Secondary School, Kavalam School, Kerala Education, NSS School, Higher Secondary Education, Education in Kerala"
 };
 
 export default function RootLayout({ children }) {
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <link rel="canonical" href="https://www.nsshsskavalam.in/" />
-
+        <meta name="robots" content="index, follow"/>
         {/* Open Graph tags */}
         <meta property="og:title" content="NSS HSS Kavalam - High School, Kerala" />
         <meta property="og:description" content={metadata.description} />
