@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { NssLogo } from "../../../common/Icons/NssLogo/NssLogo";
 import { HiMenuAlt2 } from "react-icons/hi";
+import Menubar from "../Menubar";
 
 export default function Navbar() {
   const [isDrawerOpen, setOsIsDrawerOpen] = useState(false);
@@ -73,7 +74,9 @@ export default function Navbar() {
           </div>
         </div>
         <div className={`${isDrawerOpen ? 'flex' : 'hidden'} mt-[10vh] h-screen w-screen md:hidden lg:hidden bg-white_shade z-50 `}>
-          h
+          <div className="">
+            <Menubar/>
+          </div>
         </div>
       </div>
     </div>
