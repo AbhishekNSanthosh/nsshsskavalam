@@ -13,7 +13,7 @@ import Menubar from "../Menubar";
 export default function Navbar() {
   const [isDrawerOpen, setOsIsDrawerOpen] = useState(false);
   return (
-    <div className={`${isDrawerOpen ? 'fixed' : 'relative' } md:relative lg:relative bg-white_shade top-0 z-50 h-auto flex flex-col w-screen items-center justify-center`}>
+    <div className={`${isDrawerOpen ? 'fixed' : 'relative' } min-h-[11vh] md:h-[13vh] lg:h[13vh] md:relative lg:relative bg-white_shade top-0 z-50 flex flex-col w-screen items-center justify-center`}>
       <div className="flex flex-col w-full px-5vw py-2 md:py-2 lg:py-2">
         <div className="flex w-full justify-between">
           <div className="flex sm:flex-1 lg:flex-1 p-0 items-center gap-2 lg:gap-4 md:gap-4">

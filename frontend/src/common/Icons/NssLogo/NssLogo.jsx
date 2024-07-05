@@ -8,7 +8,7 @@ export const NssLogo = () => {
         src={"/images/nssOrangeLogo.webp"}
         height={1000}
         width={1000}
-        className="w-10 md:w-16 lg:16"
+        className="w-10 md:w-12 lg:12"
 		alt="nsshsskavalam"
       />
     </div>
