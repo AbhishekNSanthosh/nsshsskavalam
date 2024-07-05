@@ -44,7 +44,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative w-screen h-[92vh] md:h-[80vh] lg:h-[80vh] overflow-hidden mt-[-1px]">
+    <div className="relative w-screen h-[92vh] md:h-[82vh] lg:h-[82vh] overflow-hidden mt-[-1px]">
       <div
         className={`absolute inset-0 flex transition-transform duration-2500 ease-in-out ${
           isTransitioning ? "" : "transition-none"
@@ -56,7 +56,7 @@ const Banner = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="w-screen h-[92vh] md:h-[80vh] lg:h-[80vh] flex-shrink-0 bg-cover bg-center flex items-center justify-center relative"
+            className="w-screen h-[92vh] md:h-[82vh] lg:h-[82vh] flex-shrink-0 bg-cover bg-center flex items-center justify-center relative"
             style={{
               backgroundImage: `linear-gradient(to bottom, #0000004a, #0000004a), url(${image})`,
             }}
