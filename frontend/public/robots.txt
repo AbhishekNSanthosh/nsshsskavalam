@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.nsshsskavalam.in
+
+# Sitemaps
+Sitemap: https://www.nsshsskavalam.in/sitemap.xml
