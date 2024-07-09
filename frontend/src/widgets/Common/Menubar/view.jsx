@@ -25,7 +25,7 @@ export default function Menubar({ handleClose }) {
           >
             <a
               href={item?.link}
-              className="text-font-secondary text-[1.5vw] md:text-[1.7vw] lg:text-[1.1vw] w-full md:w-auto lg:w-auto items-center justify-between flex flex-row lg:text-white_shade md:text-white_shade capitalize"
+              className="text-font-secondary text-[4.2vw] md:text-[1.7vw] lg:text-[1.1vw] w-full md:w-auto lg:w-auto items-center justify-between flex flex-row lg:text-white_shade md:text-white_shade capitalize"
             >
               {item?.title}
               <MdOutlineArrowForwardIos className="flex md:hidden lg:hidden text-font-secondary" />

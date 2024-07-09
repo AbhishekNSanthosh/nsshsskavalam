@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.nsshsskavalam.in/path/to/your-image.jpg"
+          content="https://www.nsshsskavalam.in/images/nss.png"
         />
 
         {/* Twitter Card tags */}
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content={metadata.description} />
         <meta
           name="twitter:image"
-          content="https://www.nsshsskavalam.in/path/to/your-image.jpg"
+          content="https://www.nsshsskavalam.in/images/nss.png"
         />
 
         {/* Structured Data */}
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
             "@type": "School",
             name: "NSS HSS Kavalam",
             url: "https://www.nsshsskavalam.in",
-            logo: "https://www.nsshsskavalam.in/path/to/your-logo.jpg",
+            logo: "https://www.nsshsskavalam.in/images/nss.png",
             description:
               "Official Website of NSS HSS Kavalam, providing quality education and holistic development in Kerala.",
             address: {
