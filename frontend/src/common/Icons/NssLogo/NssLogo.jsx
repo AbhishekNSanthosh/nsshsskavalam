@@ -9,7 +9,7 @@ export const NssLogo = () => {
         height={1000}
         width={1000}
         priority={true} 
-        className="w-10 md:w-12 lg:12"
+        className="w-7 md:w-12 lg:12"
 		alt="nsshsskavalam"
       />
     </div>

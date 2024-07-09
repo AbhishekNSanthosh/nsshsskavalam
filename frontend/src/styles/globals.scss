@@ -24,9 +24,7 @@ body {
 }
 
 * {
-  -webkit-tap-highlight-color: orange; /* Safari and Chrome */
-  -moz-tap-highlight-color: orange;    /* Firefox (not officially supported but for completeness) */
-  -ms-tap-highlight-color: orange;     /* Edge (legacy) */
+  -webkit-tap-highlight-color: transparent; /* Safari and Chrome */
 }
 
 * {
