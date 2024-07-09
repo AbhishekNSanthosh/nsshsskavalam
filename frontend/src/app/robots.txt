@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://www.nsshsskavalam.in/sitemap-0.xml
