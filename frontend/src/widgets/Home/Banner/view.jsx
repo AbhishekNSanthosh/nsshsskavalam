@@ -3,6 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "@styles/banner.scss";
 import Image from "@components/Image";
+import { GoArrowRight } from "react-icons/go";
 
 const images = [
   "/images/bg/bg5.webp",
@@ -56,16 +57,19 @@ const Banner = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="w-screen h-[92vh] md:h-[82vh] lg:h-[82vh] flex-shrink-0 bg-cover bg-center flex items-center justify-center relative"
+            className="w-screen h-[92vh] md:h-[82vh] lg:h-[82vh] flex-shrink-0 bg-cover bg-center flex flex-col items-start justify-center relative px-[5vw] gap-4"
             style={{
-              backgroundImage: `linear-gradient(to bottom, #0000004a, #0000004a), url(${image})`,
+              backgroundImage: `linear-gradient(to right, rgb(0 0 0 / 70%),rgb(0 0 0 / 40%)), url(${image})`,
             }}
           >
-            <div className="flex justify-center w-[95vw] md:w-[80vw] lg:w-[80vw] items-center flex-col rounded-lg">
-              <span className="bannerTitle text-white text-base md:text-5xl lg:text-5xl font-semibold m-4">
-                NSS Higher Secondary School, Kavalam
+            <div className="flex justify-center w-[95vw] md:w-[50vw] lg:w-[50vw] items-start flex-col rounded-lg">
+              <span className="bannerTitle text-white text-3xl md:text-6xl lg:text-6xl font-semibold">
+               Welcome to <br />NSS Higher Secondary School, Kavalam
               </span>
             </div>
+              <div className="">
+                <button className="px-3 py-2 rounded-md bg-primary text-white flex flex-row items-center justify-center gap-2 font-semibold">Learn more <GoArrowRight className="flex font-semibold"/></button>
+              </div>
           </div>
         ))}
       </div>
