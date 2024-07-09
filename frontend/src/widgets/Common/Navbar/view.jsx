@@ -2,23 +2,22 @@
 
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDays,
-  faPhoneVolume,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { NssLogo } from "../../../common/Icons/NssLogo/NssLogo";
 import { HiMenuAlt2 } from "react-icons/hi";
 import Menubar from "../Menubar";
 
 export default function Navbar() {
-  const [isDrawerOpen, setOsIsDrawerOpen] = useState(false);
-  const handleClose = (data) => {
-    setOsIsDrawerOpen(data);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const handleClose = () => {
+    setIsDrawerOpen(false);
   };
+
   return (
     <>
       <div
-        className={` fixed md:border-none lg:border-none border-b-1 border-b-primary-300  px-5vw py-2 md:py-2 lg:py-2 min-h-[11vh] md:h-[13vh] lg:h[13vh] md:relative lg:relative bg-white_shade top-0 z-50 flex flex-col w-screen items-center justify-center`}
+        className={`fixed md:border-none lg:border-none border-b-1 border-b-primary-300 px-5vw py-2 md:py-2 lg:py-2 min-h-[11vh] md:h-[13vh] lg:h[13vh] md:relative lg:relative bg-white_shade top-0 z-50 flex flex-col w-screen items-center justify-center`}
       >
         <div className="flex flex-col md:flex-row lg:flex-row w-full">
           <div className="flex w-full justify-between">
@@ -76,7 +75,7 @@ export default function Navbar() {
             <div className="flex md:hidden lg:hidden items-center justify-center text-[1.8rem] cursor-pointer">
               <HiMenuAlt2
                 onClick={() => {
-                  setOsIsDrawerOpen(!isDrawerOpen);
+                  setIsDrawerOpen(!isDrawerOpen);
                 }}
               />
             </div>
@@ -88,8 +87,14 @@ export default function Navbar() {
           isDrawerOpen ? "flex fixed" : "hidden"
         } h-[90vh] top-0 mt-[10vh] w-screen md:hidden lg:hidden bg-white_shade z-50 `}
       >
-        <div className="">
+        <div className="w-full">
           <Menubar handleClose={handleClose} />
+        </div>
+        <div className="absolute bottom-4 w-full self-center px-[5vw] flex items-center justify-center flex-col">
+          <span className="text-sm">All rights reserved</span>
+          <a href="https://midnitcode.in" className="text-sm">
+            Crafted by <span className="text-primary font-semibold">Midnitcode Innovations</span>
+          </a>
         </div>
       </div>
     </>

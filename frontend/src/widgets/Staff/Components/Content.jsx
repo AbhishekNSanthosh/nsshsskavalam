@@ -34,13 +34,13 @@ export default function Content() {
               {/* <span className="text-2xl text-primary font-semibold">
                  Staff
               </span> */}
-              <table class="items-center bg-transparent w-full border-collapse ">
+              <table className="items-center bg-transparent w-full border-collapse ">
                 <thead>
                   <tr>
-                    <th class="px-6 bg-blueGray-50  text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                    <th className="px-6 bg-blueGray-50  text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                       Name
                     </th>
-                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                    <th className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-base uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                       Designation
                     </th>
                   </tr>
@@ -49,10 +49,10 @@ export default function Content() {
                 <tbody>
                   {teachingStaffDetails?.map((detail, index) => (
                     <tr key={`${detail?.name}_${index}`}>
-                      <th class="border-t-0 capitalize px-6 align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4 text-left text-blueGray-700 ">
+                      <th className="border-t-0 capitalize px-6 align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4 text-left text-blueGray-700 ">
                         {detail?.name}
                       </th>
-                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4 ">
+                      <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-base whitespace-nowrap p-4 ">
                         {detail?.designation}
                       </td>
                     </tr>
