@@ -4,6 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "@styles/banner.scss";
 import Image from "@components/Image";
 import { GoArrowRight } from "react-icons/go";
+import Link from "next/link";
 
 const images = [
   "/images/bg/bg5.webp",
@@ -64,12 +65,17 @@ const Banner = () => {
           >
             <div className="flex justify-center w-[95vw] md:w-[50vw] lg:w-[50vw] items-start flex-col rounded-lg">
               <span className="bannerTitle text-white text-3xl md:text-6xl lg:text-6xl font-semibold">
-               Welcome to <br />NSS Higher Secondary School, Kavalam
+                Welcome to <br />
+                NSS Higher Secondary School, Kavalam
               </span>
             </div>
-              <div className="">
-                <button className="px-3 py-2 rounded-md bg-primary text-white flex flex-row items-center justify-center gap-2 font-semibold">Learn more <GoArrowRight className="flex font-semibold"/></button>
-              </div>
+            <div className="">
+              <Link href={"/about"}>
+                <button className="px-3 py-2 rounded-md bg-primary text-white flex flex-row items-center justify-center gap-2 font-semibold">
+                  Learn more <GoArrowRight className="flex font-semibold" />
+                </button>
+              </Link>
+            </div>
           </div>
         ))}
       </div>
