@@ -3,6 +3,7 @@
 import React from "react";
 import { navItems } from "../../../common/Utils/utils";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
+import Link from "next/link";
 
 export default function Menubar({ handleClose }) {
   const handleClick = () => {
@@ -23,13 +24,13 @@ export default function Menubar({ handleClose }) {
             }`}
             key={`${item?.title}_${index}`}
           >
-            <a
+            <Link
               href={item?.link}
               className="text-font-secondary text-[4.2vw] md:text-[1.7vw] lg:text-[1.1vw] w-full md:w-auto lg:w-auto items-center justify-between flex flex-row lg:text-white_shade md:text-white_shade capitalize"
             >
               {item?.title}
               <MdOutlineArrowForwardIos className="flex md:hidden lg:hidden text-font-secondary" />
-            </a>
+            </Link>
           </div>
         ))}
       </div>

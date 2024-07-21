@@ -47,7 +47,7 @@ export default function About() {
             <span className="flex text-base font-bold text-font-secondary md:text-xl lg:text-xl">
               Since 1958, Alappuzha, Kavalam P.O
             </span>
-            <p className=" text-base">
+            <p className=" text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
               commodi doloremque tempora eaque dolor, at quod ducimus non id
               perferendis vitae nisi sit voluptates. Quia id odit temporibus

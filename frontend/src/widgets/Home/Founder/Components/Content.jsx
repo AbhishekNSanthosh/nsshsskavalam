@@ -16,7 +16,7 @@ export default function Content() {
     AOS.refresh();
   }, []);
   return (
-    <div className="flex w-screen bg-primary-50 px-5vw py-20 bg-no-repeat bg-cover">
+    <div className="flex w-screen  px-5vw py-20 bg-no-repeat bg-cover">
       <div className="flex w-full items-center justify-center flex-col gap-5 ">
         <Image
           src={"/images/mannam.webp"}

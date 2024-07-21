@@ -12,8 +12,8 @@ export default function HomePage() {
     <div>
         <Banner/>
         <Founder/>
-        <Message/>
         <About/>
+        <Message/>
         <Counter/>
         <Wish/>
     </div>

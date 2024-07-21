@@ -6,6 +6,7 @@ import { faCalendarDays, faPhoneVolume } from "@fortawesome/free-solid-svg-icons
 import { NssLogo } from "../../../common/Icons/NssLogo/NssLogo";
 import { HiMenuAlt2 } from "react-icons/hi";
 import Menubar from "../Menubar";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Navbar() {
       >
         <div className="flex flex-col md:flex-row lg:flex-row w-full">
           <div className="flex w-full justify-between">
-            <a href="/" className="">
+            <Link href="/" className="">
               <div className="flex sm:flex-1 lg:flex-1 p-0 items-center gap-2 lg:gap-4 md:gap-4">
                 <NssLogo />
                 <div className="flex flex-col">
@@ -33,7 +34,7 @@ export default function Navbar() {
                   </span>
                 </div>
               </div>
-            </a>
+            </Link>
             <div className="md:flex lg:flex flex-1 hidden items-center justify-end gap-8">
               <div className="flex gap-4 items-center justify-center">
                 <FontAwesomeIcon

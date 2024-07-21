@@ -12,6 +12,7 @@ import {
   faInstagram,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -53,16 +54,16 @@ export default function Footer() {
             <div className="w-full flex justify-start pl-1 gap-16">
               <div className="flex flex-col gap-0.5">
                 {navItems?.slice(0, 6).map((item) => (
-                  <a key={item?.title} href={item?.link} className="capitalize">
+                  <Link key={item?.title} href={item?.link} className="capitalize">
                     {item?.title}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div className="flex flex-col gap-0.5">
                 {navItems?.slice(6, 11).map((item) => (
-                  <a key={item?.title} href={item?.link} className="capitalize">
+                  <Link key={item?.title} href={item?.link} className="capitalize">
                     {item?.title}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
