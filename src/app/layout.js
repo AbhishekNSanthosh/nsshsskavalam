@@ -5,6 +5,7 @@ import Menubar from "@widgets/Common/Menubar";
 import Footer from "@widgets/Common/Footer";
 import Bottombar from "@widgets/Common/Bottombar";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Raleway({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Analytics/>
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
