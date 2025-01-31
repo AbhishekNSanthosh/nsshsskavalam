@@ -188,10 +188,10 @@ export const teachingStaffDetails = [
     name: "Smt. SANGEETHA R",
     designation: "HSST HG ENGLISH",
   },
-  // {
-  //   name: "Smt. ROOPA RAJU",
-  //   designation: "HSST COMMERCE",
-  // },
+  {
+    name: "Sri. ANOOP s",
+    designation: "HSST COMMERCE",
+  },
   {
     name: "Smt. SREEDEVI M",
     designation: "HSST HG HINDI",
@@ -237,7 +237,7 @@ export const teachingStaffDetails = [
     designation: "LAB ASST HG",
   },
   {
-    name: "Sri. VYSHAKH B",
+    name: "Sri. VYSAKH B",
     designation: "LAB ASST",
   },
 ];
