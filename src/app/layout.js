@@ -1,4 +1,3 @@
-import { Raleway } from "next/font/google";
 import "@styles/globals.scss";
 import Navbar from "@widgets/Common/Navbar";
 import Menubar from "@widgets/Common/Menubar";
@@ -6,8 +5,6 @@ import Footer from "@widgets/Common/Footer";
 import Bottombar from "@widgets/Common/Bottombar";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
-
-const inter = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
   title: "NSS HSS Kavalam",
@@ -83,7 +80,7 @@ export default function RootLayout({ children }) {
           })}
         </script>
       </Head>
-      <body className={inter.className}>
+      <body>
         <Navbar />
         <div className="hidden lg:flex md:flex">
           <Menubar />
