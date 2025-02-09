@@ -8,8 +8,8 @@ export default function Content() {
       <div className="flex flex-col gap-8">
         <TitleBar title={"Academics"} />
         <div className="w-full flex flex-col gap-4">
-          {academics.map((item) => (
-            <div className="flex flex-col gap-2">
+          {academics.map((item,index) => (
+            <div className="flex flex-col gap-2" key={index}>
               <span className="text-xl capitalize font-medium text-primary-400">
                 {item?.title}
               </span>
