@@ -11,7 +11,7 @@ export default function Content() {
             <FontAwesomeIcon icon={faUsers} className="w-10"/>
           </div>
           <div className="w-full">
-         <span className="text-3xl font-bold flex items-center justify-center">3000+</span>
+         <span className="text-3xl font-bold flex items-center justify-center">500+</span>
           </div>
           <div className="w-full">
           <span className="text-2xl flex items-center justify-center">Students</span>
@@ -23,7 +23,7 @@ export default function Content() {
             <FontAwesomeIcon icon={faChalkboardTeacher} className="w-10"/>
           </div>
           <div className="w-full">
-         <span className="text-3xl font-bold flex items-center justify-center">50+</span>
+         <span className="text-3xl font-bold flex items-center justify-center">20+</span>
           </div>
           <div className="w-full">
           <span className="text-2xl flex items-center justify-center">Teachers</span>
@@ -35,7 +35,7 @@ export default function Content() {
             <FontAwesomeIcon icon={faLaptop} className="w-10"/>
           </div>
           <div className="w-full">
-         <span className="text-3xl font-bold flex items-center justify-center">12</span>
+         <span className="text-3xl font-bold flex items-center justify-center">10+</span>
           </div>
           <div className="w-full">
           <span className="text-2xl flex items-center justify-center">Digital Class Rooms</span>

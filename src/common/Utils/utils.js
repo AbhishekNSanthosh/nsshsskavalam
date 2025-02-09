@@ -285,8 +285,24 @@ export const highSchoolStaff = {
       designation: "UPST",
     },
     {
-      name: "Sri. Arathi Nair",
+      name: "Smt. Arathi Nair",
       designation: " PTLG Sanskrit",
+    },
+    {
+      name: "Sri. Gokul Kumar M",
+      designation: "OA",
+    },
+    {
+      name: "Smt. Veena V",
+      designation: "OA",
+    },
+    {
+      name: "Sri. Yadhukrishnan S",
+      designation: "FTM",
+    },
+    {
+      name: "Sri. Girish S",
+      designation: "Clerk",
     },
   ]
   ,
@@ -361,15 +377,15 @@ export const committee = [
 
 export const academics = [
   {
-    title: "Science stream",
+    title: "Science stream (01 & 05)",
     desc: "English, Mathematics, Physics & Chemistry are the compulsory subjects.\n\n Optional subjects include Biology and Computer Science. ",
   },
   {
-    title: "Humanities stream",
+    title: "Humanities stream (28)",
     desc: "History, Economics, Second language, English, Sanskrit(Shastra, Sahithya), .\n\n Physical Education, General Studies are the non-scholastic subjects included in the syllabus.",
   },
   {
-    title: "Commerce stream",
+    title: "Commerce stream (39)",
     desc: "English, Computer Application, Business Studies, Accountancy, Economics, Second language.\n\n Physical Education, General Studies are the non-scholastic subjects included in the syllabus.",
   },
 ];
@@ -391,9 +407,9 @@ export const managementCommittee = [
     mobNo:"9496114870"
   },
   {
-    name: "GOPAKUMAR K",
+    name: "ARUN B",
     designation: "PTA President",
-    mobNo: "7909158236",
+    mobNo: "--",
   },
   {
     name: "SASIKUMAR NALLARAKAL",
