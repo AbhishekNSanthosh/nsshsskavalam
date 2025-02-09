@@ -285,8 +285,24 @@ export const highSchoolStaff = {
       designation: "UPST",
     },
     {
-      name: "Sri. Arathi Nair",
+      name: "Smt. Arathi Nair",
       designation: " PTLG Sanskrit",
+    },
+    {
+      name: "Sri. Gokul Kumar M",
+      designation: "OA",
+    },
+    {
+      name: "Smt. Veena V",
+      designation: "OA",
+    },
+    {
+      name: "Sri. Yadhukrishnan S",
+      designation: "FTM",
+    },
+    {
+      name: "Sri. Girish S",
+      designation: "Clerk",
     },
   ]
   ,
