@@ -36,19 +36,22 @@ export default function Navbar() {
               </div>
             </Link>
             <div className="md:flex lg:flex flex-1 hidden items-center justify-end gap-8">
+              <div className="self-end mb-2">
+                <span className="">School Code: <span className="font-sans font-semibold">04066</span></span>
+              </div>
               <div className="flex gap-4 items-center justify-center">
                 <FontAwesomeIcon
                   icon={faCalendarDays}
                   className="h-8 text-primary"
                 />
                 <div className="flex flex-col">
-                  <div className="flex">
-                    <span className="">9:00</span>
+                  <div className="flex font-sans">
+                    <span className="font-sans">9:00</span>
                     <span className="">AM</span>
                     &nbsp;
                     <span className=""> - </span>
                     &nbsp;
-                    <span className="">5:00</span>
+                    <span className="font-sans">5:00</span>
                     <span className="">PM</span>
                   </div>
                   <span className="">Monday to Saturday</span>
@@ -62,9 +65,9 @@ export default function Navbar() {
                 <div className="flex flex-col">
                   <span className="">Call us</span>
                   <span className="">
-                    <a href="tel:04772746100" className="">
+                    <Link href="tel:04772746100" className="font-sans">
                       0477 2746100
-                    </a>
+                    </Link>
                     &nbsp;
                   </span>
                 </div>
