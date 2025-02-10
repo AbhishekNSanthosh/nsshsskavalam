@@ -14,7 +14,7 @@ export default function Content() {
   const highSchoolUPStaff = highSchoolStaff?.details || [];
 
   return (
-    <div className="px-[5vw] py-8 flex flex-col items-center justify-center pt-[100px] lg:pt-0">
+    <div className="px-[5vw] py-8 flex flex-col items-center justify-center pt-[100px] lg:pt-10">
       <div className="flex flex-col gap-8">
         <TitleBar title={"Staff"} />
         <div className="flex" data-aos="fade-up">

@@ -5,7 +5,7 @@ import { committee, managementCommittee } from '@utils/utils'
 
 export default function Content() {
   return (
-    <div className="flex px-[5vw] py-8 w-full pt-[80px] lg:pt-0">
+    <div className="flex px-[5vw] py-8 w-full pt-[80px] lg:pt-10">
       <div className="flex flex-col gap-8 w-full">
         <TitleBar title={"Committe"} />
         <div className="w-full items-center justify-center flex flex-col gap-6" data-aos="fade-up">

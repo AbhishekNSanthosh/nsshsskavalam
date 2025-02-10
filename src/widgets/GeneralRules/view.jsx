@@ -4,7 +4,7 @@ import { DisciplinaryRules } from '../../common/Utils/utils'
 
 export default function GeneralRules() {
   return (
-    <div className='w-screen py-8 px-5vw pt-[80px] lg:pt-0'>
+    <div className='w-screen py-8 px-5vw pt-[80px] lg:pt-10'>
       <div className="flex flex-col gap-8">
         <TitleBar title={"Rules and Regulations"}/>
         <div className="" data-aos="fade-up">
