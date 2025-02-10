@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Video() {
   return (
-    <div className="flex flex-col items-center justify-center px-6 py-10 rounded-lg">
-      <h2 className="text-2xl font-bold text-primary mb-4 text-center">
+    <div className="flex flex-col items-center justify-center px-6 py-10 rounded-lg" data-aos="fade-up">
+      <h2 className="text-2xl font-bold text-primary mb-6 text-center">
         Champions of Veliyanadu Subdistrict Kalotsavam
       </h2>
       <div className="w-full max-w-2xl h-auto">
