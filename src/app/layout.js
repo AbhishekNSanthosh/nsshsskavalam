@@ -5,6 +5,7 @@ import Footer from "@widgets/Common/Footer";
 import Bottombar from "@widgets/Common/Bottombar";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
+import AOSProvider from "@components/AOSProvider";
 
 export const metadata = {
   title: "NSS HSS Kavalam",
@@ -85,7 +86,7 @@ export default function RootLayout({ children }) {
         <div className="hidden lg:flex md:flex">
           <Menubar />
         </div>
-        {children}
+        <AOSProvider>{children}</AOSProvider>
         <Footer />
         <Bottombar />
       </body>
