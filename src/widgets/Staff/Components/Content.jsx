@@ -14,10 +14,10 @@ export default function Content() {
   const highSchoolUPStaff = highSchoolStaff?.details || [];
 
   return (
-    <div className="px-[5vw] py-8 flex flex-col items-center justify-center pt-[100px]">
+    <div className="px-[5vw] py-8 flex flex-col items-center justify-center pt-[100px] lg:pt-10">
       <div className="flex flex-col gap-8">
         <TitleBar title={"Staff"} />
-        <div className="flex">
+        <div className="flex" data-aos="fade-up">
           <p className="text-base md:text-lg">
             The teaching faculty of NSSPS forms a tremendous task force
             comprising of around 50. <br />
@@ -39,7 +39,7 @@ export default function Content() {
           </p>
         </div>
         {/* Section selector */}
-        <div className="flex flex-col gap-8 items-center justify-center mt-4">
+        <div className="flex flex-col gap-8 items-center justify-center mt-4" data-aos="fade-up">
           <div className="flex gap-4 md:gap-8">
             <button
               onClick={() => setCurrentSection("higherSecondary")}

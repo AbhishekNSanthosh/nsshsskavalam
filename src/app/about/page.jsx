@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center pt-[50px] lg:pt-0">
       <About />
     </div>
   );

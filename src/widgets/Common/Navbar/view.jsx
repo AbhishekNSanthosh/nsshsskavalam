@@ -54,7 +54,7 @@ export default function Navbar() {
                     <span className="font-sans">5:00</span>
                     <span className="">PM</span>
                   </div>
-                  <span className="">Monday to Saturday</span>
+                  <span className="">Monday to Friday</span>
                 </div>
               </div>
               <div className="flex gap-4 items-center justify-center">

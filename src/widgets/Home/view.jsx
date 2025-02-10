@@ -8,6 +8,8 @@ import Wish from '@widgets/Home/Wish'
 import Founder from '@widgets/Home/Founder'
 import OurTeam from './OurTeam'
 import PreLoader from '@components/PreLoader'
+import Video from './Videos'
+import GalleryView from './Gallery'
 
 export default function HomePage() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -28,6 +30,8 @@ export default function HomePage() {
         <OurTeam/>
         <Message/>
         <Counter/>
+        <Video/>
+        <GalleryView/>
         <Wish/>
     </div>
   )

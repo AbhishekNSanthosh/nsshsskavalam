@@ -24,12 +24,12 @@ export default function OurTeam() {
 
   return (
     <div className="flex-1 flex flex-col gap-8 px-[5vw] py-[3rem]">
-      <div className="w-full text-center mb-8">
+      <div className="w-full text-center mb-8" data-aos="fade-up">
       <TitleBar title={"Our Team"} />
       </div>
 
       {/* Team Member Section */}
-      <div className="flex md:flex-row md:space-x-[10vw] flex-col">
+      <div className="flex md:flex-row md:space-x-[10vw] flex-col" data-aos="fade-up">
         {teamMembers.map((member, index) => (
           <div key={index} className="flex-col flex flex-1 items-center justify-center border p-3 rounded-lg">
             <div>

@@ -4,13 +4,14 @@ import TitleBar from "@widgets/Common/TitleBar";
 import React from "react";
 import LocationIcon from "@icons/SvgIcons/LocationIcon";
 import { colors } from "../../../common/Utils/utils";
-import PhoneIcons from "@icons/SvgIcons/PhoneIcons";
-import MailIcon from "@icons/SvgIcons/MailIcon";
-import Form from "@widgets/Contact/Components/Form";
+import { FaPhone } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
+import Link from "next/link";
+import { IoLocationSharp } from "react-icons/io5";
 
 export default function Content() {
   return (
-    <div className="w-full px-5vw py-8">
+    <div className="w-full px-5vw py-8 pt-[80px] lg:pt-10">
       <div className="flex flex-col gap-8">
         <TitleBar title={"Contact"} />
         <div className="mt-2 mb-14">
@@ -35,41 +36,44 @@ export default function Content() {
                 sensitive please use below contact details.
               </p>
             </div>
-            <div className="flex w-[50%] gap-4 items-center justify-start">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary-100">
-                <LocationIcon stroke={colors.primary} />
+            <div className="flex flex-row space-x-3">
+              <div className="bg bg-primary-100 w-[50px] h-[50px] flex items-center justify-center rounded-full">
+                <IoLocationSharp className="text-3xl text-primary" />
               </div>
-              <div className="flex flex-col items-start">
-                <span className="text-lg font-semibold">Address</span>
-                <span className="">Kavalam, Alappuzha, 688506</span>
-              </div>
-            </div>
-
-            <div className="flex w-[50%] gap-4 items-center justify-start">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary-100">
-                <PhoneIcons stroke={colors.primary} />
-              </div>
-              <div className="flex flex-col items-start">
-                <span className="text-lg font-semibold">Phone</span>
-                <a href="tel:04772746100" className="">
-                      0477 2746100
-                    </a>
+              <div className="flex flex-col">
+                <span className="font-semibold">Address:</span>
+                <div className="flex flex-col space-y-1">
+                  <span className="">Kavalam, Alappuzha, 688506</span>
+                </div>
               </div>
             </div>
 
-            <div className="flex w-[50%] gap-4 items-center justify-start">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary-100">
-                <MailIcon stroke={colors.primary} />
+            <div className="flex flex-row space-x-3">
+              <div className="bg bg-primary-100 w-[50px] h-[50px] flex items-center justify-center rounded-full">
+                <FaPhone className="text-xl text-primary" />
               </div>
-              <div className="flex flex-col items-start">
-                <span className="text-lg font-semibold">E-Mail</span>
-                <a
+              <div className="flex flex-col">
+                <span className="font-semibold">Phone:</span>
+                <Link
+                  href="tel:04772746100"
+                  className="text-blue-500 hover:underline"
+                >
+                  0477 2746100
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-row space-x-3">
+              <div className="bg bg-primary-100 w-[50px] h-[50px] flex items-center justify-center rounded-full">
+                <MdOutlineMail className="text-3xl text-primary" />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-semibold">Email:</span>
+                <Link
                   href="mailto:nsshsskavalam04066@gmail.com"
-                  target="_blank"
-                  className=""
+                  className="text-blue-500 hover:underline"
                 >
                   nsshsskavalam04066@gmail.com
-                </a>
+                </Link>
               </div>
             </div>
           </div>
