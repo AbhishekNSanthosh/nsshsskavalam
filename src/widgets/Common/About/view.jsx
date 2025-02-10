@@ -36,7 +36,7 @@ Today, NSS HSS Kavalam stands as a cornerstone of education in the region, conti
     <div className="w-full px-5vw py-8">
       <div className="w-full flex flex-col gap-6 md:gap-12 lg:gap-12">
         <TitleBar title={"About Us"} />
-        <div className="flex flex-col items-start justify-between gap-10 md:flex-row lg:flex-row" data-aos="fade-up">
+        <div className="flex flex-col items-start justify-between gap-10 md:flex-row lg:flex-row">
           <div className="flex-1 flex flex-col gap-2">
             <div className="flex">
               <Image
