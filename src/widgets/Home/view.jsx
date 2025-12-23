@@ -11,7 +11,7 @@ import OurTeam from "./OurTeam";
 import PreLoader from "@components/PreLoader";
 import Video from "./Videos";
 import GalleryView from "./Gallery";
-import AdBanner from "@/app/AdBanner";
+import AdBanner from "../../app/AdBanner";
 
 export default function HomePage() {
   const [isLoaded, setIsLoaded] = useState(false);
