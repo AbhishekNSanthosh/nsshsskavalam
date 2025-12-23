@@ -4,6 +4,7 @@ import React from "react";
 import { navItems } from "../../../common/Utils/utils";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Menubar({ handleClose }) {
   const handleClick = () => {
@@ -11,6 +12,11 @@ export default function Menubar({ handleClose }) {
       handleClose(false);
     }
   };
+    const location = usePathname();
+  
+    if (location.includes("admin")) {
+      return null; // hide navbar for admin routes
+    }
   return (
     <div
       onClick={handleClick}
