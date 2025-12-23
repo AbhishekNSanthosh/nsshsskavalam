@@ -80,6 +80,8 @@ export default function RootLayout({ children }) {
             },
           })}
         </script>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2223224465872155"
+     crossorigin="anonymous"></script>
       </Head>
       <body>
         <Navbar />
