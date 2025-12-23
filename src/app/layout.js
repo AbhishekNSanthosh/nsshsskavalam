@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="canonical" href="https://www.nsshsskavalam.in/" />
         <meta name="robots" content="index, follow" />
+            <meta name="google-adsense-account" content="ca-pub-2223224465872155">
         {/* Open Graph tags */}
         <meta
           property="og:title"
