@@ -1,11 +1,10 @@
 import React from "react";
 
-export default function TitleBar({title}) {
+export default function TitleBar({ title }) {
   return (
-    <div className="flex w-full items-center gap-2">
-      {/* <div className="w-1.5 bg-primary h-9"></div>
-      <div className="w-1.5 bg-primary h-9"></div> */}
-      <span className="text-2xl font-semibold text-primary lg:text-4xl md:text-4xl">|| {title}</span>
+    <div className="flex flex-col items-start gap-2">
+      <h2 className="text-2xl md:text-4xl font-bold text-font-primary">{title}</h2>
+      <div className="w-10 h-1 rounded-full bg-primary" />
     </div>
   );
 }

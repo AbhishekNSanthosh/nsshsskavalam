@@ -7,39 +7,40 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Menubar({ handleClose }) {
-  const handleClick = () => {
-    if (window.innerWidth < 768) {
-      handleClose(false);
-    }
-  };
-    const location = usePathname();
-  
-    if (location.includes("admin")) {
-      return null; // hide navbar for admin routes
-    }
+  const location = usePathname();
+
+  if (location.includes("admin")) return null;
+
   return (
-    <div
-      onClick={handleClick}
-      className="flex flex-col w-full bg-white_shade lg:bg-primary md:bg-primary py-3 items-center justify-center lg:flex-row md:flex-row"
-    >
-      <div className="flex flex-col lg:flex-row md:flex-row gap-4 md:gap-0 lg:gap-0 w-full items-center justify-center px-[5vw]">
-        {navItems?.map((item, index) => (
-          <div
-            className={`flex w-full md:w-auto lg:w-auto items-center pb-4 md:pb-0 lg:pb-0 justify-center px-0 md:px-[1.3vw] lg:px-[2vw] ${
-              item?.hr ? "lg:border-r md:border-r border-primary-200" : ""
-            }`}
-            key={`${item?.title}_${index}`}
-          >
-            <Link
-              href={item?.link}
-              className="text-font-secondary text-[4.2vw] md:text-[1.7vw] lg:text-[1.1vw] w-full md:w-auto lg:w-auto items-center justify-between flex flex-row lg:text-white_shade md:text-white_shade capitalize"
+    <nav className="w-full bg-white_shade md:bg-primary">
+      <ul className="flex flex-col md:flex-row items-center justify-center px-[5vw] md:px-[5vw]">
+        {navItems?.map((item, index) => {
+          const isActive =
+            location === item.link ||
+            (item.link !== "/" && location.startsWith(item.link));
+          return (
+            <li
+              key={`${item?.title}_${index}`}
+              className={`w-full md:w-auto flex-shrink-0 ${
+                item?.hr ? "md:border-r md:border-primary-300" : ""
+              }`}
             >
-              {item?.title}
-              <MdOutlineArrowForwardIos className="flex md:hidden lg:hidden text-font-secondary" />
-            </Link>
-          </div>
-        ))}
-      </div>
-    </div>
+              <Link
+                href={item?.link}
+                onClick={() => handleClose?.()}
+                className={`flex items-center justify-between md:justify-center px-0 md:px-4 lg:px-5 py-3.5 md:py-3 text-sm md:text-xs lg:text-sm capitalize transition-colors border-b border-gray-100 md:border-none ${
+                  isActive
+                    ? "text-primary md:text-white font-semibold"
+                    : "text-font-secondary md:text-white/90 hover:text-primary md:hover:text-white"
+                }`}
+              >
+                {item?.title}
+                <MdOutlineArrowForwardIos className="md:hidden text-xs opacity-40" />
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   );
 }

@@ -1,151 +1,123 @@
-"use client"
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { logos, navItems } from "../../../common/Utils/utils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faLocationDot,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faInstagram,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { MdArrowForwardIos } from "react-icons/md";
 
 export default function Footer() {
-    const location = usePathname();
-  
-    if (location.includes("admin")) {
-      return null; // hide navbar for admin routes
-    }
+  const location = usePathname();
+  if (location.includes("admin")) return null;
+
   return (
-    <div className="mt-10 md:mt-10 lg:mt-10">
-      <hr />
-      <div className="w-full px-5vw py-4 md:py-16 lg:py-16">
-        <div className="w-full flex flex-col gap-8 md:gap-4 lg:gap-4 sm:flex-row md:flex-row lg:flex-row">
-          <div className="flex-1 pr-0 md:pr-3 lg:pr-3">
-            <div className="flex justify-start gap-4">
-              <Image
-                src={logos.nssLogoWebP}
-                height={1000}
-                width={1000}
-                className="w-9 md:w-12 lg:w-12"
-                alt="nsshsskavalam"
-              />
-              <div className="flex flex-col justify-center">
-                <span className="font-bold text-font-primary text-sm lg:text-base md:text-base">
-                  NSS HIGHER SECONDARY SCHOOL
+    <footer className="bg-gray-950 text-white mt-10">
+      {/* Main footer */}
+      <div className="px-[5vw] py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+
+          {/* Col 1 — Brand */}
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
+                <Image
+                  src={logos.nssLogoWebP}
+                  height={80}
+                  width={80}
+                  className="w-7 h-7 object-contain"
+                  alt="NSS HSS Kavalam"
+                />
+              </div>
+              <div className="flex flex-col leading-tight">
+                <span className="font-bold text-sm md:text-base text-white">
+                  NSS Higher Secondary School
                 </span>
-                <span className="font-normal text-font-secondary text-xs lg:text-sm md:text-sm">
-                  Kavalam Alappuzha District, Kerala
-                </span>
+                <span className="text-xs text-white/50">Kavalam, Alappuzha</span>
               </div>
             </div>
-            <div className="pt-4 pr-0 text-justify md:pr-8 lg:pr-8">
-              At NSS Higher Secondary School, we provide quality education to
-              help students grow and succeed. Our school focuses on academics,
-              values, and preparing students for the future. With the support of
-              our teachers, we help students become confident and responsible
-              individuals.
+            <p className="text-sm text-white/60 leading-relaxed">
+              Providing quality education to help students grow and succeed.
+              Focused on academics, values, and preparing students for a
+              confident and responsible future.
+            </p>
+            {/* Social */}
+            <div className="flex gap-3">
+              {[faFacebook, faWhatsapp, faInstagram].map((icon, i) => (
+                <div
+                  key={i}
+                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center cursor-pointer transition-colors duration-200"
+                >
+                  <FontAwesomeIcon icon={icon} className="h-4 text-white" />
+                </div>
+              ))}
             </div>
           </div>
 
-          <div className="flex-1 w-full flex flex-col justify-center gap-y-4">
-            <div className="w-full flex flex-col justify-start">
-              <span className="font-semibold text-font-secondary text-lg">
-                Quick Links
-              </span>
-            </div>
-            <div className="w-full flex justify-start pl-1 gap-16">
-              <div className="flex flex-col gap-0.5">
-                {navItems?.slice(0, 6).map((item) => (
-                  <Link
-                    key={item?.title}
-                    href={item?.link}
-                    className="capitalize"
-                  >
-                    {"-> "}{item?.title}
-                  </Link>
-                ))}
-              </div>
-              <div className="flex flex-col gap-0.5">
-                {navItems?.slice(6, 11).map((item) => (
-                  <Link
-                    key={item?.title}
-                    href={item?.link}
-                    className="capitalize"
-                  >
-                    {"-> "}{item?.title}
-                  </Link>
-                ))}
-              </div>
+          {/* Col 2 — Quick Links */}
+          <div className="flex flex-col gap-5">
+            <h4 className="font-semibold text-white text-base border-b border-white/10 pb-2">
+              Quick Links
+            </h4>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.title}
+                  href={item.link}
+                  className="flex items-center gap-1.5 text-sm text-white/60 hover:text-primary transition-colors capitalize group"
+                >
+                  <MdArrowForwardIos className="text-[10px] text-primary/60 group-hover:translate-x-0.5 transition-transform" />
+                  {item.title}
+                </Link>
+              ))}
             </div>
           </div>
-          <div className="flex-1 flex flex-col gap-y-4">
-            <div className="w-full justify-end flex flex-col  gap-y-4">
-              <div className="flex">
-                <span className="text-font-secondary font-semibold text-lg">
-                  Get In Touch
-                </span>
-              </div>
-              <div className="flex">
-                <div className="flex justify-center items-center">
-                  <FontAwesomeIcon
-                    icon={faEnvelope}
-                    className="text-font-secondary h-4"
-                  />
-                  <a
-                    href="mailto:nsshsskavalam04066@gmail.com"
-                    className="ml-2"
-                  >
-                    nsshsskavalam04066@gmail.com
-                  </a>
+
+          {/* Col 3 — Contact */}
+          <div className="flex flex-col gap-5">
+            <h4 className="font-semibold text-white text-base border-b border-white/10 pb-2">
+              Get In Touch
+            </h4>
+            <div className="flex flex-col gap-4">
+              <a
+                href="mailto:nsshsskavalam04066@gmail.com"
+                className="flex items-start gap-3 text-sm text-white/60 hover:text-primary transition-colors group"
+              >
+                <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <FontAwesomeIcon icon={faEnvelope} className="h-3.5" />
                 </div>
-              </div>
-              <div className="flex">
-                <div className="flex justify-center items-center">
-                  <FontAwesomeIcon
-                    icon={faPhone}
-                    className="text-font-secondary h-4"
-                  />
-                  <a href="tel:04772746100" className="">
-                    0477 2746100
-                  </a>
+                <span className="mt-1 break-all">nsshsskavalam04066@gmail.com</span>
+              </a>
+              <a
+                href="tel:04772746100"
+                className="flex items-center gap-3 text-sm text-white/60 hover:text-primary transition-colors group"
+              >
+                <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <FontAwesomeIcon icon={faPhone} className="h-3.5" />
                 </div>
-              </div>
-              <div className="flex">
-                <div className="flex justify-center items-center">
-                  <FontAwesomeIcon
-                    icon={faLocationDot}
-                    className="text-font-secondary h-4"
-                  />
-                  <span className="ml-2">
-                    Kavalam Alappuzha District, Kerala 688506
-                  </span>
+                0477 274 6100
+              </a>
+              <div className="flex items-start gap-3 text-sm text-white/60">
+                <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+                  <FontAwesomeIcon icon={faLocationDot} className="h-3.5" />
                 </div>
-              </div>
-              <div className="flex gap-4 mt-3">
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  className="h-7 cursor-pointer"
-                />
-                <FontAwesomeIcon
-                  icon={faWhatsapp}
-                  className="h-7 cursor-pointer"
-                />
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  className="h-7 cursor-pointer"
-                />
+                <span className="mt-1">Kavalam, Alappuzha District, Kerala — 688506</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-white/10 px-[5vw] py-4 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/40">
+        <span>© 2025 NSS HSS Kavalam. All Rights Reserved.</span>
+        <Link href="https://beond.in" target="_blank" className="hover:text-white/70 transition-colors">
+          Developed by <span className="text-primary font-semibold">Beond Innovations</span>
+        </Link>
+      </div>
+    </footer>
   );
 }

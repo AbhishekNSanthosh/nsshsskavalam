@@ -20,9 +20,9 @@ export default function Bottombar() {
         </div>
         <div className="flex md:flex-1 lg:flex-1 items-center justify-end">
           <span className="text-font-secondary text-xs md:text-base lg:text-base">
-            Crafted by{" "}
-            <Link target="_blank" className="font-semibold" href={"https://midnitcode.in"}>
-              Midnitcode Innovations
+            Developed by{" "}
+            <Link target="_blank" className="font-semibold" href={"https://beond.in"}>
+              Beond Innovations
             </Link>
           </span>
         </div>

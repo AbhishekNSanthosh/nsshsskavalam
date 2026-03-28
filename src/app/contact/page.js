@@ -1,31 +1,37 @@
-import Contact from '@widgets/Contact'
-import React from 'react'
+import Contact from "@widgets/Contact";
+import React from "react";
 
 export const metadata = {
   title: "Contact Us | NSS Higher Secondary School Kavalam",
-  description: "Get in touch with NSS Higher Secondary School Kavalam for inquiries, feedback, and support. We are here to assist you.",
-  keywords: "contact, NSS Higher Secondary School, Kavalam, Kerala, school contact, inquiries, feedback, support, education",
+  description:
+    "Contact NSS HSS Kavalam for admissions, enquiries, or feedback. Call 0477 274 6100, email nsshsskavalam04066@gmail.com, or visit us in Kavalam, Alappuzha, Kerala — 688506.",
+  keywords:
+    "contact NSS HSS Kavalam, NSS school phone number Kavalam, school address Alappuzha Kerala 688506, higher secondary admissions enquiry Kerala",
+  alternates: {
+    canonical: "https://www.nsshsskavalam.in/contact",
+  },
   openGraph: {
     title: "Contact Us | NSS Higher Secondary School Kavalam",
-    description: "Reach out to NSS Higher Secondary School Kavalam for any inquiries or support. Our team is here to help with your academic needs.",
-    url: "https://nsshsskavalam.in/contact", // Updated with your domain
-    site_name: "NSS Higher Secondary School Kavalam",
+    description:
+      "Reach NSS HSS Kavalam at 0477 274 6100 or nsshsskavalam04066@gmail.com. Located in Kavalam, Alappuzha, Kerala — 688506.",
+    url: "https://www.nsshsskavalam.in/contact",
+    siteName: "NSS Higher Secondary School Kavalam",
     images: [
       {
-        url: "https://nsshsskavalam.in/images/contact-banner.jpg", // Replace with actual contact page image URL
+        url: "https://www.nsshsskavalam.in/images/nss.png",
         width: 1200,
         height: 630,
-        alt: "Contact NSS Higher Secondary School Kavalam"
-      }
+        alt: "Contact NSS Higher Secondary School Kavalam",
+      },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@nsshsskavalam", // Replace with your actual Twitter handle
     title: "Contact Us | NSS Higher Secondary School Kavalam",
-    description: "Contact NSS Higher Secondary School Kavalam for any questions, support, or information related to our programs.",
-    image: "https://nsshsskavalam.in/images/contact-banner.jpg", // Replace with actual image URL
+    description:
+      "Contact NSS HSS Kavalam — 0477 274 6100 | Kavalam, Alappuzha, Kerala.",
+    images: ["https://www.nsshsskavalam.in/images/nss.png"],
   },
   robots: {
     index: true,
@@ -34,5 +40,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <Contact />
+  return <Contact />;
 }

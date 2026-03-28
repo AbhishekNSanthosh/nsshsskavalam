@@ -1,31 +1,37 @@
-import Staff from '@widgets/Staff'
-import React from 'react'
+import Staff from "@widgets/Staff";
+import React from "react";
 
 export const metadata = {
-  title: "Staff Details | NSS Higher Secondary School Kavalam",
-  description: "Meet the dedicated staff members of NSS Higher Secondary School Kavalam, including teachers, administrative staff, and support staff who contribute to the school's academic excellence.",
-  keywords: "staff details, NSS Higher Secondary School, Kavalam, Kerala, teaching staff, administrative staff, school faculty, NSS Kavalam team",
+  title: "Staff | NSS Higher Secondary School Kavalam",
+  description:
+    "Meet the dedicated teaching and non-teaching staff of NSS HSS Kavalam. Our 50+ faculty members bring expertise across Science, Humanities, Commerce, and more.",
+  keywords:
+    "NSS HSS Kavalam staff, teaching faculty Kavalam, school teachers Alappuzha Kerala, higher secondary staff, NSS school faculty 04066",
+  alternates: {
+    canonical: "https://www.nsshsskavalam.in/staff",
+  },
   openGraph: {
-    title: "Staff Details | NSS Higher Secondary School Kavalam",
-    description: "Get to know the talented staff members at NSS Higher Secondary School Kavalam, from academic instructors to administrative personnel.",
-    url: "https://nsshsskavalam.in/staff", // Replace with your actual URL
-    site_name: "NSS Higher Secondary School Kavalam",
+    title: "Staff | NSS Higher Secondary School Kavalam",
+    description:
+      "Meet the 50+ dedicated educators and staff of NSS HSS Kavalam, Alappuzha, Kerala.",
+    url: "https://www.nsshsskavalam.in/staff",
+    siteName: "NSS Higher Secondary School Kavalam",
     images: [
       {
-        url: "https://nsshsskavalam.in/images/staff-banner.jpg", // Replace with actual image URL
+        url: "https://www.nsshsskavalam.in/images/nss.png",
         width: 1200,
         height: 630,
-        alt: "Staff Members at NSS Higher Secondary School Kavalam"
-      }
+        alt: "Staff of NSS Higher Secondary School Kavalam",
+      },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@nsshsskavalam", // Replace with your actual Twitter handle
-    title: "Staff Details | NSS Higher Secondary School Kavalam",
-    description: "Explore the staff details at NSS Higher Secondary School Kavalam and learn about the team of dedicated professionals working to support student success.",
-    image: "https://nsshsskavalam.in/images/staff-banner.jpg", // Replace with actual image URL
+    title: "Staff | NSS Higher Secondary School Kavalam",
+    description:
+      "Meet the dedicated staff of NSS HSS Kavalam, Alappuzha, Kerala.",
+    images: ["https://www.nsshsskavalam.in/images/nss.png"],
   },
   robots: {
     index: true,
@@ -34,7 +40,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return (
-    <Staff/>
-  )
+  return <Staff />;
 }

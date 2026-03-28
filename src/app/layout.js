@@ -2,7 +2,6 @@ import "@styles/globals.scss";
 import Navbar from "@widgets/Common/Navbar";
 import Menubar from "@widgets/Common/Menubar";
 import Footer from "@widgets/Common/Footer";
-import Bottombar from "@widgets/Common/Bottombar";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
 import AOSProvider from "@components/AOSProvider";
@@ -80,17 +79,14 @@ export default function RootLayout({ children }) {
             },
           })}
         </script>
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2223224465872155"
-     crossorigin="anonymous"></script>
       </Head>
       <body>
         <Navbar />
-        <div className="hidden lg:flex md:flex">
+        <div className="hidden md:flex sticky top-20 z-40 w-full shadow-sm">
           <Menubar />
         </div>
         <AOSProvider>{children}</AOSProvider>
         <Footer />
-        <Bottombar />
       </body>
     </html>
   );

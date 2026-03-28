@@ -1,31 +1,37 @@
-import Committee from '@widgets/Committee'
-import React from 'react'
+import Committee from "@widgets/Committee";
+import React from "react";
 
 export const metadata = {
-  title: "Committee | NSS Higher Secondary School Kavalam",
-  description: "Meet the dedicated members of the NSS Higher Secondary School Kavalam management and faculty committee, working towards shaping the future of education.",
-  keywords: "committee, NSS Higher Secondary School, Kavalam, Kerala, school management, school committee, faculty, education leadership, academic committee",
+  title: "School Management Committee | NSS Higher Secondary School Kavalam",
+  description:
+    "Meet the School Management Committee of NSS HSS Kavalam for the academic year 2024–25, overseeing the school's academic and administrative excellence.",
+  keywords:
+    "school management committee NSS Kavalam, NSS HSS Kavalam committee 2024-25, PTA committee Kerala school, school administration Alappuzha",
+  alternates: {
+    canonical: "https://www.nsshsskavalam.in/committee",
+  },
   openGraph: {
-    title: "Committee | NSS Higher Secondary School Kavalam",
-    description: "Explore the leadership and committee members of NSS Higher Secondary School Kavalam, committed to guiding students towards success.",
-    url: "https://nsshsskavalam.in/committee", // Updated with your domain
-    site_name: "NSS Higher Secondary School Kavalam",
+    title: "School Management Committee | NSS Higher Secondary School Kavalam",
+    description:
+      "School Management Committee 2024–25 of NSS HSS Kavalam, Alappuzha, Kerala.",
+    url: "https://www.nsshsskavalam.in/committee",
+    siteName: "NSS Higher Secondary School Kavalam",
     images: [
       {
-        url: "https://nsshsskavalam.in/images/committee-banner.jpg", // Replace with an actual image URL on your server
+        url: "https://www.nsshsskavalam.in/images/nss.png",
         width: 1200,
         height: 630,
-        alt: "Committee at NSS Higher Secondary School Kavalam"
-      }
+        alt: "Committee of NSS Higher Secondary School Kavalam",
+      },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@nsshsskavalam", // Replace with your actual Twitter handle
-    title: "Committee | NSS Higher Secondary School Kavalam",
-    description: "Meet the committee members at NSS Higher Secondary School Kavalam, who contribute to shaping the future of education and student development.",
-    image: "https://nsshsskavalam.in/images/committee-banner.jpg", // Replace with an actual image URL
+    title: "School Management Committee | NSS Higher Secondary School Kavalam",
+    description:
+      "School Management Committee 2024–25 of NSS HSS Kavalam, Alappuzha, Kerala.",
+    images: ["https://www.nsshsskavalam.in/images/nss.png"],
   },
   robots: {
     index: true,
@@ -34,7 +40,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return (
-    <Committee />
-  )
+  return <Committee />;
 }

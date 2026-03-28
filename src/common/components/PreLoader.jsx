@@ -1,36 +1,53 @@
-import { NssLogo } from "@icons/NssLogo/NssLogo";
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 export default function PreLoader() {
   return (
-    <div className="fixed inset-0 z-[1000] bg-white flex items-center justify-center">
-      <div className="">
-        <div className="flex items-center justify-center flex-col gap-2 px-5vw">
-          <Link href="/" className="">
-            <div className="flex flex-col sm:flex-1 lg:flex-1 p-0 items-center gap-2">
-              <Image
-                src={"/images/nssOrangeLogo.webp"}
-                height={1000}
-                width={1000}
-                priority={true}
-                className="w-7 md:w-20 lg:20"
-                alt="nsshsskavalam"
-              />
-              <div className="flex flex-col items-center justify-center">
-                <span className="text-[0.9rem] font-semibold md:text-xl lg:text-xl">
-                  NSS Higher Secondary School{" "}
-                </span>
-                <span className="text-xs md:text-base lg:text-base">
-                  Kavalam, Alappuzha{" "}
-                </span>
-              </div>
-            </div>
-          </Link>
-          <span className="loader"></span>
+    <div className="fixed inset-0 z-[1000] bg-white flex flex-col items-center justify-center gap-6">
+      {/* Logo + Name */}
+      <div className="flex flex-col items-center gap-3 animate-fade-up">
+        <Image
+          src="/images/nssOrangeLogo.webp"
+          height={200}
+          width={200}
+          priority
+          alt="NSS HSS Kavalam"
+          className="w-16 h-16 object-contain"
+        />
+        <div className="flex flex-col items-center gap-0.5 text-center">
+          <span className="text-base font-bold text-font-primary">
+            NSS Higher Secondary School
+          </span>
+          <span className="text-xs text-font-secondary">Kavalam, Alappuzha</span>
         </div>
       </div>
+
+      {/* Animated dots */}
+      <div className="flex gap-2">
+        {[0, 1, 2].map((i) => (
+          <div
+            key={i}
+            className="w-2 h-2 rounded-full bg-primary"
+            style={{ animation: `bounce 1s ease-in-out ${i * 0.18}s infinite` }}
+          />
+        ))}
+      </div>
+
+      <style>{`
+        @keyframes bounce {
+          0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+          40%            { transform: translateY(-8px); opacity: 1; }
+        }
+        .animate-fade-up {
+          animation: fadeUp 0.5s ease-out forwards;
+        }
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(12px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </div>
   );
 }
